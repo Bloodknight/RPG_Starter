@@ -1,0 +1,105 @@
+﻿/* Keys defined in PMBuildDefs.c */
+
+"package.contents.file.worldWritable" = "File \"%@\" is world-writable.";
+"package.contents.file.modeMismatch" = "Mode %1$@ does not match %2$@ of root volume for \"%3$@\". Make sure to have disk permissions repaired with Disk Utility.";
+"package.contents.file.groupMismatch" = "Group ID %1$@ does not match %2$@ of root volume for \"%3$@\". Make sure to have disk permissions repaired with Disk Utility.";
+"package.contents.file.ownerMismatch" = "User ID %1$@ does not match %2$@ of root volume for \"%3$@\". Make sure to have disk permissions repaired with Disk Utility.";
+"package.contents.file.groupInvalid" = "Group ID %1$@ for \"%2$@\" exceeds 16 bit. The package might not install correctly.";
+"package.contents.file.ownerInvalid" = "User ID %1$@ for \"%2$@\" exceeds 16 bit. The package might not install correctly.";
+"package.contents.file.isZeroLinked" = "Binary file \"%1$@\" uses ZeroLink.";
+
+"package.build.temporaryBom" = "Could not create temporary BOM.";
+"package.build.archiveBom" = "Could not create Archive.bom.";
+"package.build.filterBom" = "Could not filter Archive.bom.";
+
+"package.configuration.choice.blank" = "Package \"%@\" is not assigned to a choice.";
+"package.configuration.installFrom.blank" = "Package source cannot be blank.";
+"package.configuration.installFrom.invalid" = "Package source does not exist on disk.";
+"package.configuration.installTo.blank" = "Install destination is blank. Default destination will be \"/\".";
+"package.configuration.bundleID.blank" = "Package identifier cannot be blank.";
+"package.configuration.bundleID.duplicate" = "Duplicate package identifiers.";
+"package.configuration.relocation.requiresPanther" = "Relocation will only work on Mac OS X v10.3.3 or later.";
+"package.configuration.authorization.isLow" = "\"Require Admin Authorization\" is recommended but not enabled. Installation may fail.";
+"package.configuration.locationString.blank" = "Package location cannot be blank.";
+"package.configuration.locationString.invalidSchema" = "Package location \"%1$@\" does not specify \"%2$@\" URL scheme. Installation may fail.";
+
+"package.build.createLproj" = "Could not create \"%@.lproj\" directory.";
+"package.build.copyResource" = "Could not copy resources to \"%@.lproj\".";
+"package.build.copyExtraFiles" = "Coult not copy extra raw files.";
+"package.build.copyScripts" = "Could not copy scripts.";
+"package.build.createPackage" = "Could not create package \"%@\".";
+"package.build.createContents" = "Could not create Contents directory for \"%@\".";
+"package.build.createResources" = "Could not create Resources directory for \"%@\".";
+"package.build.createBundleVersions" = "Could not write BundleVersions.plist.";
+"package.build.createTokenDefinitions" = "Coult not write TokenDefinitions.plist.";
+"package.build.createRequirements" = "Count not create package requirements.";
+"package.build.createDescriptionsPlist" = "Could not create Description.plist.";
+"package.build.createPermHierarchy" = "Could not write permission directory hierarchy.";
+
+"package.build.cleanup" = "Could not remove temporary files.";
+"package.build.applyPatches" = "Could not apply patches to root.";
+"package.build.findSplitForks" = "Could not preserve resource forks because %@ could not be found.";
+"package.build.splitForks" = "\"%1$@\" failed to preserve resource forks with error code %2$@.";
+
+"package.build.copyFileRoot" = "Could not create root for file.";
+"package.build.copyPatchRoot" = "Could not copy root to apply patches.";
+"package.build.copyForSplitForks" = "Could not copy root to split forks.";
+"package.build.copyForDomainInstalls" = "Could not copy root for domain install.";
+"package.build.copyUnreadable" = "Could not copy unreadable files.";
+
+"wrapper.interface.tigerOnlyResource" = "\"%@\" resources are not supported prior to Mac OS X v10.4.";
+"wrapper.build.noPackages" = "No packages to build.";
+
+"flatpackage.scripts.deprecated" = "\"%@\" scripts are not supported in flat packages.";
+"flatpackage.build.createBuildDirectory" = "Could not create build directory for flat package.";
+"flatpackage.build.renamePayload" = "Could not rename \"Payload\".";
+"flatpackage.build.renameBom" = "Could not rename \"Bom\".";
+"flatpackage.build.renameScripts" = "Could not rename \"Scripts\".";
+"flatpackage.build.openFlatFile" = "Could not open flat package.";
+"flatpackage.build.addPackageInfo" = "Could not add PackageInfo to flat package.";
+"flatpackage.build.addBom" = "Could not add \"Bom\" to flat package.";
+"flatpackage.build.addPayload" = "Could not add \"Payload\" to flat package.";
+"flatpackage.build.addScripts" = "Could not add \"Scripts\" to flat package.";
+"flatpackage.build.finishFlatFile" = "Could not finish flat package.";
+"flatpackage.build.sign" = "Could not sign flat package.";
+
+"flatdistribution.build.addDistributionScript" = "Could not add Distribution to flat metapackage.";
+"flatdistribution.build.addResources" = "Could not add Resources to flat metapackage.";
+"flatdistribution.build.addFolder" = "Could not add \"%1$@\" to flat metapackage.";
+
+"choice.configuration.choices.empty" = "Distribution has no choices.";
+"choice.configuration.title.blank" = "Choice \"%@\" has a blank title.";
+"choice.configuration.identifier.duplicate" = "Choice \"%1$@\" has the same identifier as \"%2$@\".";
+"choice.configuration.choice.noChildren" = "Choice \"%@\" has no subchoices and no package refs.";
+"choice.requirements.requirement.needsDistribution" = "Requirement \"%2$@\" of choice \"%1$@\" is not supported prior to Mac OS X v10.4.";
+"choice.requirements.requirement.affectsHidden" = "Requirement \"%2$@\" of choice \"%1$@\" affects the hidden property, which will not work prior to Mac OS X v10.4.";
+"choice.requirements.requirement.enablesAndUnselects" = "Requirement \"%2$@\" of choice \"%1$@\" sets the choice as unselected and enabled, which will not work prior to Mac OS X v10.4.";
+"choice.configuration.state.hiddenChoiceInMetapackage" = "Choice \"%@\" starts hidden, which will not work prior to Mac OS X v10.4.";
+"choice.configuration.state.disabledUnselectedChoiceInMetapackage" = "Choice \"%@\" starts unselected and disabled, which will not work prior to Mac OS X v10.4.";
+
+"distribution.configuration.title.blank" = "Distribution title must not be blank.";
+"distribution.configuration.userSees.requiresDistribution" = "Only \"Easy and Custom Install\" will work prior to Mac OS X v10.4.";
+"distribution.configuration.domain.noDomain" = "No install domain specified, will default to \"Volume selected by user\".";
+"distribution.configuration.domain.requiresLeopard" = "Install domain \"%@\" will not work prior to Mac OS X v10.5.";
+"distribution.requirements.requirement.needsDistribution" = "Requirement \"%@\" is not supported prior to Mac OS X v10.4.";
+"distribution.build.certificate.invalid" = "The specified certificate appears to be invalid. Package will not be signed.";
+"distribution.build.certificate.requiresLeopard" = "Certificate signing is not supported prior to Mac OS X v10.5. Package will not be signed.";
+"distribution.actions.action.targetTooHigh" = "Action \"%@\" will not work on your minimum target.";
+
+"distribution.build.createPackagesDirectory" = "Could not create packages directory.";
+"distribution.build.movePackageIntoPackage" = "Could not move \"%@\" into package.";
+"distribution.build.createJavascript" = "Could not create distribution script.";
+"distribution.build.writeXML" = "Could not write distribution XML file.";
+
+"metapackage.build.createOldStyleInfoFile" = "Could not create info file.";
+"package.build.createPkgInfo" = "Could not create \"PkgInfo\" file.";
+"package.build.createPackageVersion" = "Could not create \"package_version\" file.";
+
+"package.build.cli.mergeDescriptionPlist" = "Could not merge \"Description.plist\" file into package: %@.";
+"package.build.cli.mergeInfoPlist" = "Could not merge \"Info.plist\" file into package: %@.";
+"package.build.cli.mergePackageInfo" = "Could not merge \"PackageInfo\" file into package: %@.";
+"package.build.cli.copyResourceFile" = "Could not copy \"%1$@\" into package: %2$@.";
+
+"package.build.unarchiveFailed" = "Could not unarchive package payload.";
+"package.build.noArchive" = "No payload could be found. The package will not be built.";
+"package.build.patchPackagePreLeopard" = "This package contains patch files, which will not install correctly prior to Mac OS X v10.5.";
