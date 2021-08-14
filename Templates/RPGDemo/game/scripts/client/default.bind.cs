@@ -535,7 +535,7 @@ function mouseWheelWeaponCycle(%val)
 
 moveMap.bind(keyboard, q, nextWeapon);
 moveMap.bind(keyboard, "ctrl q", prevWeapon);
-moveMap.bind(mouse, "zaxis", mouseWheelWeaponCycle);
+//moveMap.bind(mouse, "zaxis", mouseWheelWeaponCycle);
 
 //------------------------------------------------------------------------------
 // Message HUD functions

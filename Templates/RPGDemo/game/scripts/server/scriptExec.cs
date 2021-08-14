@@ -49,12 +49,12 @@ exec("./player.cs");
 // Load our player scripts
 // exec("./aiPlayer.cs"); // AFX MOD: functionality replaced with afxNonPlayer.cs
 
-exec("./vehicle.cs");
-exec("./vehicleWheeled.cs");
-exec("./cheetah.cs");
+//exec("./vehicle.cs");
+//exec("./vehicleWheeled.cs");
+//exec("./cheetah.cs");
 
 // Load turret support scripts
-exec("./turret.cs");
+//exec("./turret.cs");
 
 // Load our gametypes
 exec("./gameCore.cs"); // This is the 'core' of the gametype functionality.

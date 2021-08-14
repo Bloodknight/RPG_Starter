@@ -55,6 +55,13 @@ function onMissionEnded_AFX()
   
   if (isObject(PlayGui))
     PlayGui.setSpellBook("");
+
+     // DATABLOCK CACHE CODE <<
+	   if ($Pref::Server::EnableDatablockCache)
+	      resetDatablockCache();
+
+	    DatablockFilesList.empty();
+   // DATABLOCK CACHE CODE >>
 }
 
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//

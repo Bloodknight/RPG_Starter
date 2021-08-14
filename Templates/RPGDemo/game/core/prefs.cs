@@ -1,7 +1,7 @@
 $Pref::Server::AdminPassword = "";
 $Pref::Server::AFX::parameterFieldPrefix = "_";
 $Pref::Server::BanTime = 1800;
-$Pref::Server::ConnectionError = "You do not have the correct version of AFX_DevHead or the related art needed to play on this server, please contact the server administrator.";
+$Pref::Server::ConnectionError = "You do not have the correct version of RPGStarter or the related art needed to play on this server, please contact the server administrator.";
 $Pref::Server::DatablockCacheFilename = "scripts/server/cache/datablock_cache.dbc";
 $Pref::Server::EnableDatablockCache = "0";
 $Pref::Server::FloodProtectionEnabled = 1;
