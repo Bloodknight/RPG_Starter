@@ -21,7 +21,7 @@ new Root(BotTree) {
 
             new ScriptedBehavior() {
                preconditionMode = "ONCE";
-               internalName = "look for enemy";
+               internalName = "look_for_enemy";
                class = "pickTargetTask";
                canSave = "1";
                canSaveDynamicFields = "1";
@@ -41,7 +41,7 @@ new Root(BotTree) {
 
             new SubTree() {
                subTreeName = "getHealthTree";
-               internalName = "get health";
+               internalName = "get_health";
                canSave = "1";
                canSaveDynamicFields = "1";
             };

@@ -8,7 +8,7 @@ new Root(botMatchTree) {
       canSaveDynamicFields = "1";
 
       new Sequence() {
-         internalName = "run the match";
+         internalName = "run_the_match";
          canSave = "1";
          canSaveDynamicFields = "1";
 
@@ -38,7 +38,7 @@ new Root(botMatchTree) {
                   new ScriptEval() {
                      behaviorScript = "centerPrintAll(\"BotMatch in\" SPC %obj.countdown, 2);\n%obj.countdown --;";
                      defaultReturnStatus = "SUCCESS";
-                     internalName = "countdown message";
+                     internalName = "countdown_message";
                      canSave = "1";
                      canSaveDynamicFields = "1";
                   };
@@ -47,7 +47,7 @@ new Root(botMatchTree) {
             new ScriptEval() {
                behaviorScript = "centerPrintAll(\"GO!\",1);";
                defaultReturnStatus = "SUCCESS";
-               internalName = "lets go";
+               internalName = "lets_go";
                canSave = "1";
                canSaveDynamicFields = "1";
             };
@@ -63,19 +63,19 @@ new Root(botMatchTree) {
                canSaveDynamicFields = "1";
 
                new Sequence() {
-                  internalName = "spawn bots";
+                  internalName = "spawn_bots";
                   canSave = "1";
                   canSaveDynamicFields = "1";
 
                   new ScriptEval() {
                      behaviorScript = "// pick a marker to spawn at\n%spawnpoint = PatrolPath.getRandom();\n\n// create the bot\n%bot = BadBot::spawn(\"\", %spawnpoint);\n\n// set its behavior\n%bot.setbehavior(BotTree, $BotTickFrequency);\n\n// add it to the botgroup\n%obj.botGroup.add(%bot);\n\n// keep track of the current bot\n%obj.currentBot = %bot;\n\n// decrement the number of bots left to spawn\n%obj.numBotsToSpawn --;";
                      defaultReturnStatus = "SUCCESS";
-                     internalName = "spawn one bot";
+                     internalName = "spawn_one_bot";
                      canSave = "1";
                      canSaveDynamicFields = "1";
                   };
                   new RandomSelector() {
-                     internalName = "pick a weapon";
+                     internalName = "pick_a_weapon";
                      canSave = "1";
                      canSaveDynamicFields = "1";
 
@@ -97,7 +97,7 @@ new Root(botMatchTree) {
                   new ScriptEval() {
                      behaviorScript = "if(%obj.numBotsToSpawn == 0) return FAILURE;";
                      defaultReturnStatus = "SUCCESS";
-                     internalName = "check if more bots to spawn";
+                     internalName = "check_if_more_bots_to_spawn";
                      canSave = "1";
                      canSaveDynamicFields = "1";
                   };
@@ -111,21 +111,21 @@ new Root(botMatchTree) {
             new WaitForSignal() {
                signalName = "onBotmatchCancel";
                timeoutMs = "0";
-               internalName = "stop on cancel signal";
+               internalName = "stop_on_cancel_signal";
                canSave = "1";
                canSaveDynamicFields = "1";
             };
          };
       };
       new Sequence() {
-         internalName = "end the match";
+         internalName = "end_the_match";
          canSave = "1";
          canSaveDynamicFields = "1";
 
          new ScriptEval() {
             behaviorScript = "%obj.botGroup.delete();";
             defaultReturnStatus = "SUCCESS";
-            internalName = "remove bots";
+            internalName = "remove_bots";
             canSave = "1";
             canSaveDynamicFields = "1";
          };

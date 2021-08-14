@@ -10,20 +10,20 @@ new Root(getHealthTree) {
       new ScriptEval() {
          behaviorScript = "if (%obj.getDamagePercent() > 0.75) return SUCCESS;";
          defaultReturnStatus = "FAILURE";
-         internalName = "need health?";
+         internalName = "need_health?";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
       new ScriptedBehavior() {
          preconditionMode = "ONCE";
-         internalName = "look for health";
+         internalName = "look_for_health";
          class = "findHealthTask";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
       new ScriptedBehavior() {
          preconditionMode = "TICK";
-         internalName = "get health";
+         internalName = "get_health";
          class = "getHealthTask";
          canSave = "1";
          canSaveDynamicFields = "1";

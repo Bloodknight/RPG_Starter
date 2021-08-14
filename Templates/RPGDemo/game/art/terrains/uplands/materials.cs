@@ -53,7 +53,7 @@ singleton Material( TerrainDirtGrass : TerrainSoft )
 
 singleton Material( TerrainGrass1Dry : TerrainSoft )
 {
-   MapTo = "grass1-dry";
+   MapTo = "grass1_dry";
 };
 
 singleton Material( TerrainGrass1 : TerrainSoft )

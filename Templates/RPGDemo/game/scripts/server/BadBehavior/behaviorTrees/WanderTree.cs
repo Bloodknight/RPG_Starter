@@ -9,7 +9,7 @@ new Root(WanderTree) {
 
       new ScriptedBehavior() {
          preconditionMode = "ONCE";
-         internalName = "move somewhere";
+         internalName = "move_somewhere";
          class = "wanderTask";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -17,7 +17,7 @@ new Root(WanderTree) {
       new WaitForSignal() {
          signalName = "onReachDestination";
          timeoutMs = "0";
-         internalName = "wait until there";
+         internalName = "wait_until_there";
          canSave = "1";
          canSaveDynamicFields = "1";
       };

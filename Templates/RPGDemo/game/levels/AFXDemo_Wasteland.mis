@@ -1,5 +1,5 @@
 //--- OBJECT WRITE BEGIN ---
-new Scene(MissionGroup) {
+new scene(MIS_Wasteland) {
    new LevelInfo(theLevelInfo) {
       levelName = "Wasteland";
       desc0 = "A desolate mission in a raging sandstorm.<br>" @

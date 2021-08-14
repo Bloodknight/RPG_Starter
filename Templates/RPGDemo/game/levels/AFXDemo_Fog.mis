@@ -1,5 +1,5 @@
 //--- OBJECT WRITE BEGIN ---
-new Scene(MissionGroup) {
+new scene(MIS_Fog) {
    new LevelInfo(theLevelInfo) {
       LevelName = "Velvet Fog";
       desc0 = "A murky mission with a polysoup station structure and dense fog.<br>" @

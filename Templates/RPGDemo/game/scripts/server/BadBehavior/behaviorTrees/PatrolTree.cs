@@ -9,7 +9,7 @@ new Root(PatrolTree) {
 
       new ScriptedBehavior() {
          preconditionMode = "ONCE";
-         internalName = "Move to closest node on path";
+         internalName = "Move_to_closest_node_on_path";
          class = "moveToClosestNodeTask";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -32,7 +32,7 @@ new Root(PatrolTree) {
 
             new ScriptedBehavior() {
                preconditionMode = "ONCE";
-               internalName = "move along path";
+               internalName = "move_along_path";
                class = "patrolTask";
                canSave = "1";
                canSaveDynamicFields = "1";

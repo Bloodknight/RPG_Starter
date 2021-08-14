@@ -1,5 +1,5 @@
 //--- OBJECT WRITE BEGIN ---
-new Scene(MissionGroup) {
+new scene(MIS_Minimal) {
    new LevelInfo(theLevelInfo) {
       levelName = "Minimal Mission";
       desc0 = "A lightweight daytime level without buildings or water.<br>" @

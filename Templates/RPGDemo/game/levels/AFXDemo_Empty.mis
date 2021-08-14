@@ -1,5 +1,5 @@
 //--- OBJECT WRITE BEGIN ---
-new Scene(MissionGroup) {
+new scene(MIS_Empty) {
    new LevelInfo(theLevelInfo) {
       levelName = "Vacant Space";
       desc0 = "A totally empty level.<br>" @

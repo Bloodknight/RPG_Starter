@@ -51,9 +51,9 @@ new TerrainMaterial()
 
 new TerrainMaterial()
 {
-   internalName = "grass1-dry";
-   diffuseMap = "art/terrains/uplands/grass1-dry";
-   detailMap = "art/terrains/uplands/grass1-dry_detail";
+   internalName = "grass1_dry";
+   diffuseMap = "art/terrains/uplands/grass1_dry";
+   detailMap = "art/terrains/uplands/grass1_dry_detail";
    detailSize = "10";
    detailDistance = "100";
    isManaged = "1";
@@ -97,7 +97,7 @@ new TerrainMaterial()
    detailMap = "art/terrains/classic/detail1";
    detailStrength = "0.5";
    detailDistance = "100";
-   internalName = "art/terrains/grassland/grass";
+   internalName = "grasslandgrass";
    diffuseSize = "128";
 };
 
@@ -107,7 +107,7 @@ new TerrainMaterial()
    detailStrength = "0.5";
    detailDistance = "100";
    detailMap = "art/terrains/classic/detail1";
-   internalName = "art/terrains/grassland/sand";
+   internalName = "grasslandsand";
    diffuseSize = "128";
 };
 
@@ -117,7 +117,7 @@ new TerrainMaterial()
    detailStrength = "0.5";
    detailDistance = "100";
    detailMap = "art/terrains/classic/detail1";
-   internalName = "art/terrains/grassland/patchy";
+   internalName = "grasslandpatchy";
    diffuseSize = "128";
 };
 

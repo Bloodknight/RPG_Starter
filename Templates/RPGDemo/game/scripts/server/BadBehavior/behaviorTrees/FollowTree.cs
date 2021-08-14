@@ -10,14 +10,14 @@ new Root(FollowTree) {
       new ScriptEval() {
          behaviorScript = "return isObject(%obj.followObject) ? SUCCESS : FAILURE;\n";
          defaultReturnStatus = "SUCCESS";
-         internalName = "has object to follow?";
+         internalName = "has_object_to_follow?";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
       
       new FollowBehaviorAction() {
             preconditionMode = "TICK";
-            internalName = "follow the object";
+            internalName = "follow_the_object";
             canSave = "1";
             canSaveDynamicFields = "1";
       };
