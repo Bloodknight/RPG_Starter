@@ -1,0 +1,23 @@
+Search "exec(" (293 hits in 48 files of 261 searched)
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\datablocks\actors\OrcMage.cs (1 hit)
+exec("art/shapes/actors/OrcMage/OrcMage.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\datablocks\actors\OrcWarrior.cs (1 hit)
+exec("art/shapes/actors/OrcWarrior/OrcWarrior.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\datablocks\actors\SpaceOrcMage.cs (1 hit)
+exec("art/shapes/actors/SpaceOrcMage/SpaceOrcMage.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\gui\optionsDlg.cs (1 hit)
+exec( "scripts/client/default.bind.cs" );
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\main.cs (4 hits)
+exec( "./client/defaults.cs" );
+
+

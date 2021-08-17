@@ -1,0 +1,23 @@
+  E:\RPG_Starter3\My Projects\RPGStarterImport\core\main.cs (6 hits)
+	Line 81:    exec("./scripts/client/core");
+	Line 84:    exec("./scripts/client/client");
+	Line 85:    exec("./scripts/server/server");
+	Line 87:    exec("./scripts/gui/guiTreeViewCtrl");
+	Line 88:    exec("./scripts/gui/messageBoxes/messageBox.ed");
+	Line 176:                exec(%nextArg, true, true);
+    
+  E:\RPG_Starter3\My Projects\RPGStarterImport\main.cs (3 hits)
+	Line 74: exec("core/parseArgs");
+	Line 215:    exec(%dir @ "/main");
+	Line 225:    if(exec(%token @ "/main") != true)
+
+  E:\RPG_Starter3\My Projects\RPGStarterImport\scripts\main.cs (4 hits)
+	Line 89:    exec( "./client/defaults" );
+	Line 90:    exec( "./server/defaults" );
+	Line 96:    exec("./client/init");
+	Line 97:    exec("./server/init");
+
+  E:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\BadBehavior\main.cs (3 hits)
+	Line 23: exec("./behaviorTreeManager");
+	Line 24: exec("./BadBot");
+	Line 25: exec("./botMatch");

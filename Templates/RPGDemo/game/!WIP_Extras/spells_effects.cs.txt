@@ -1,0 +1,254 @@
+
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\CoreTech\astral_passport.cs (6 hits)
+exec("./lighting/ap_lighting_tge_sub.cs");
+exec("./audio/ap_audio_sub.cs");
+exec("./lighting/ap_lighting_tgea_sub.cs");
+exec("./audio/ap_audio_sub.cs");
+exec("./lighting/ap_lighting_t3d_sub.cs");
+exec("./audio/ap_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\CoreTech\great_ball_of_fire.cs (6 hits)
+exec("./lighting/gbof_lighting_tge_sub.cs");
+exec("./audio/gbof_audio_sub.cs");
+exec("./lighting/gbof_lighting_tgea_sub.cs");
+exec("./audio/gbof_audio_sub.cs");
+exec("./lighting/gbof_lighting_t3d_sub.cs");
+exec("./audio/gbof_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\CoreTech\light_my_fire.cs (6 hits)
+exec("./lighting/lmf_lighting_tge_sub.cs");
+exec("./audio/lmf_audio_sub.cs");
+exec("./lighting/lmf_lighting_tgea_sub.cs");
+exec("./audio/lmf_audio_sub.cs");
+exec("./lighting/lmf_lighting_t3d_sub.cs");
+exec("./audio/lmf_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\CoreTech\presto_change_orc.cs (6 hits)
+exec("./lighting/pco_lighting_tge_sub.cs");
+exec("./audio/pco_audio_sub.cs");
+exec("./lighting/pco_lighting_tgea_sub.cs");
+exec("./audio/pco_audio_sub.cs");
+exec("./lighting/pco_lighting_t3d_sub.cs");
+exec("./audio/pco_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\CoreTech\reaper_madness.cs (6 hits)
+exec("./lighting/rm_lighting_tge_sub.cs");
+exec("./audio/rm_audio_sub.cs");
+exec("./lighting/rm_lighting_tgea_sub.cs");
+exec("./audio/rm_audio_sub.cs");
+exec("./lighting/rm_lighting_t3d_sub.cs");
+exec("./audio/rm_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\CoreTech\sf_occams_laser.cs (6 hits)
+exec("./lighting/ol_lighting_tge_sub.cs");
+exec("./audio/ol_audio_sub.cs");
+exec("./lighting/ol_lighting_tgea_sub.cs");
+exec("./audio/ol_audio_sub.cs");
+exec("./lighting/ol_lighting_t3d_sub.cs");
+exec("./audio/ol_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack1\arcane_membrane.cs (6 hits)
+exec("./lighting/aitm_lighting_tge_sub.cs");
+exec("./audio/aitm_audio_sub.cs");
+exec("./lighting/aitm_lighting_tgea_sub.cs");
+exec("./audio/aitm_audio_sub.cs");
+exec("./lighting/aitm_lighting_t3d_sub.cs");
+exec("./audio/aitm_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack1\cantrip_and_fall.cs (3 hits)
+exec("./audio/ctaf_audio_sub.cs");
+exec("./audio/ctaf_audio_sub.cs");
+exec("./audio/ctaf_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack1\flame_broil.cs (6 hits)
+exec("./lighting/fb_lighting_tge_sub.cs");
+exec("./audio/fb_audio_sub.cs");
+exec("./lighting/fb_lighting_tgea_sub.cs");
+exec("./audio/fb_audio_sub.cs");
+exec("./lighting/fb_lighting_t3d_sub.cs");
+exec("./audio/fb_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack1\insectoplasm.cs (6 hits)
+exec("./lighting/iop_lighting_tge_sub.cs");
+exec("./audio/iop_audio_sub.cs");
+exec("./lighting/iop_lighting_tgea_sub.cs");
+exec("./audio/iop_audio_sub.cs");
+exec("./lighting/iop_lighting_t3d_sub.cs");
+exec("./audio/iop_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack1\mapleleaf_frag.cs (6 hits)
+exec("./lighting/mlf_lighting_tge_sub.cs");
+exec("./audio/mlf_audio_sub.cs");
+exec("./lighting/mlf_lighting_tgea_sub.cs");
+exec("./audio/mlf_audio_sub.cs");
+exec("./lighting/mlf_lighting_t3d_sub.cs");
+exec("./audio/mlf_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack1\spirit_of_roach.cs (6 hits)
+exec("./lighting/sor_lighting_tge_sub.cs");
+exec("./audio/sor_audio_sub.cs");
+exec("./lighting/sor_lighting_tgea_sub.cs");
+exec("./audio/sor_audio_sub.cs");
+exec("./lighting/sor_lighting_t3d_sub.cs");
+exec("./audio/sor_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack1\summon_moth.cs (7 hits)
+exec("./summon_moth_sub.cs");
+exec("./lighting/sfm_lighting_tge_sub.cs");
+exec("./audio/sfm_audio_sub.cs");
+exec("./lighting/sfm_lighting_tgea_sub.cs");
+exec("./audio/sfm_audio_sub.cs");
+exec("./lighting/sfm_lighting_t3d_sub.cs");
+exec("./audio/sfm_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack1\thors_hammer.cs (6 hits)
+exec("./lighting/th_lighting_tge_sub.cs");
+exec("./audio/th_audio_sub.cs");
+exec("./lighting/th_lighting_tgea_sub.cs");
+exec("./audio/th_audio_sub.cs");
+exec("./lighting/th_lighting_t3d_sub.cs");
+exec("./audio/th_audio_t3d_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack2\bolt_from_the_blue.cs (6 hits)
+exec("./lighting/bfb_lighting_tge_sub.cs");
+exec("./audio/bfb_audio_sub.cs");
+exec("./lighting/bfb_lighting_tgea_sub.cs");
+exec("./audio/bfb_audio_sub.cs");
+exec("./lighting/bfb_lighting_t3d_sub.cs");
+exec("./audio/bfb_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack2\bron_y_orc_stomp.cs (7 hits)
+exec("./special/byos_cam_sub.cs");
+exec("./lighting/byos_lighting_tge_sub.cs");
+exec("./audio/byos_audio_sub.cs");
+exec("./lighting/byos_lighting_tgea_sub.cs");
+exec("./audio/byos_audio_sub.cs");
+exec("./lighting/byos_lighting_t3d_sub.cs");
+exec("./audio/byos_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack2\chill_kill.cs (6 hits)
+exec("./audio/ck_audio_sub.cs");
+exec("./audio/ck_audio_sub.cs");
+exec("./audio/ck_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack2\fire_in_the_sky.cs (7 hits)
+exec("./lighting/fits_lighting_tge_sub.cs");
+exec("./audio/fits_audio_sub.cs");
+exec("./lighting/fits_lighting_tgea_sub.cs");
+exec("./audio/fits_audio_sub.cs");
+exec("./lighting/fits_lighting_t3d_sub.cs");
+exec("./audio/fits_audio_sub.cs");
+exec("./special/fits_fireball_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack2\flaming_stick_trick.cs (7 hits)
+exec("./special/fst_cinematic_sub.cs");
+exec("./lighting/fst_lighting_tge_sub.cs");
+exec("./audio/fst_audio_sub.cs");
+exec("./lighting/fst_lighting_tgea_sub.cs");
+exec("./audio/fst_audio_sub.cs");
+exec("./lighting/fst_lighting_t3d_sub.cs");
+exec("./audio/fst_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack2\green_legs_and_scram.cs (6 hits)
+exec("./lighting/glas_lighting_tge_sub.cs");
+exec("./audio/glas_audio_sub.cs");
+exec("./lighting/glas_lighting_tgea_sub.cs");
+exec("./audio/glas_audio_sub.cs");
+exec("./lighting/glas_lighting_t3d_sub.cs");
+exec("./audio/glas_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack2\mark_of_kork.cs (6 hits)
+exec("./lighting/mok_lighting_tge_sub.cs");
+exec("./audio/mok_audio_sub.cs");
+exec("./lighting/mok_lighting_tgea_sub.cs");
+exec("./audio/mok_audio_sub.cs");
+exec("./lighting/mok_lighting_t3d_sub.cs");
+exec("./audio/mok_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack2\pillar_of_fire.cs (6 hits)
+exec("./lighting/pof_lighting_tge_sub.cs");
+exec("./lighting/pof_lighting_tgea_sub.cs");
+exec("./lighting/pof_lighting_t3d_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack2\ring_of_fire.cs (7 hits)
+exec("./lighting/rof_lighting_tge_sub.cs");
+exec("./audio/rof_audio_sub.cs");
+exec("./lighting/rof_lighting_tgea_sub.cs");
+exec("./audio/rof_audio_sub.cs");
+exec("./lighting/rof_lighting_t3d_sub.cs");
+exec("./audio/rof_audio_sub.cs");
+exec("./special/rof_burner_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack2\shards_of_vesuvius.cs (7 hits)
+exec("./lighting/sov_lighting_tge_sub.cs");
+exec("./audio/sov_audio_sub.cs");
+exec("./lighting/sov_lighting_tgea_sub.cs");
+exec("./audio/sov_audio_sub.cs");
+exec("./lighting/sov_lighting_t3d_sub.cs");
+exec("./audio/sov_audio_sub.cs");
+exec("./special/sov_comets_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack2\soul_nuke.cs (6 hits)
+exec("./lighting/sn_lighting_tge_sub.cs");
+exec("./audio/sn_audio_sub.cs");
+exec("./lighting/sn_lighting_tgea_sub.cs");
+exec("./audio/sn_audio_sub.cs");
+exec("./lighting/sn_lighting_t3d_sub.cs");
+exec("./audio/sn_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack2\soul_sucking_jerk.cs (6 hits)
+exec("./lighting/ssj_lighting_tge_sub.cs");
+exec("./audio/ssj_audio_sub.cs");
+exec("./lighting/ssj_lighting_tgea_sub.cs");
+exec("./audio/ssj_audio_sub.cs");
+exec("./lighting/ssj_lighting_t3d_sub.cs");
+exec("./audio/ssj_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack2\the_letter_k.cs (6 hits)
+exec("./lighting/lk_lighting_tge_sub.cs");
+exec("./lighting/lk_lighting_tgea_sub.cs");
+exec("./lighting/lk_lighting_t3d_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack2\up_in_flames.cs (6 hits)
+exec("./lighting/uif_lighting_tge_sub.cs");
+exec("./audio/uif_audio_sub.cs");
+exec("./lighting/uif_lighting_tgea_sub.cs");
+exec("./audio/uif_audio_sub.cs");
+exec("./lighting/uif_lighting_t3d_sub.cs");
+exec("./audio/uif_audio_sub.cs");
+
+
+e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\server\afx\effects\SpellPack2\wandering_wisps.cs (3 hits)
+exec("./audio/ww_audio_sub.cs");
+exec("./audio/ww_audio_sub.cs");
+exec("./audio/ww_audio_sub.cs");
+
