@@ -1,28 +1,16 @@
 
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
-// Arcane-FX for MIT Licensed Open Source version of Torque 3D from GarageGames
+// Arcane-FX
 //
-// Copyright (C) 2015 Faust Logic, Inc.
+// Functions for AFX Demo
 //
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to
-// deal in the Software without restriction, including without limitation the
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-// sell copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-// IN THE SOFTWARE.
-//
+// Copyright (C) Faust Logic, Inc.
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
+
+//UAISK+AFX Interop Changes: Start
+if ($UAISK_Is_Available)
+   exec("data/Cogflicts/scripts/server/UAISK/aiDatablocks.cs");
+//UAISK+AFX Interop Changes: End
 
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
@@ -34,6 +22,22 @@ function PlayerDataAFX::onAdd(%this,%obj)
    // Default dynamic armor stats
    %obj.setRechargeRate(%this.rechargeRate);
    %obj.setRepairRate(%this.repairRate);
+
+   //UAISK+AFX Interop Changes: Start
+   if ($UAISK_Is_Available && isObject(%obj.client))
+   {
+      %client = %obj.client;
+
+      //Give the client and player a team
+      if (%client.team $= "")
+         %client.team = 1;
+
+      %obj.team = %client.team;
+
+      //Put the player in a SimSet with its teammates
+      TeamSimSets(%obj, %obj.team);
+   }
+   //UAISK+AFX Interop Changes: End
 }
 
 function PlayerDataAFX::onRemove(%this, %obj)
@@ -57,6 +61,28 @@ function PlayerDataAFX::onCollision(%this,%obj,%col)
 {
    if (%obj.getState() $= "Dead")
       return;
+
+   //UAISK+AFX Interop Changes: Start
+   //If this is a bot that collided with an enemy, face that enemy
+   if ($UAISK_Is_Available && %obj.isbot == true)
+   {
+      if (%col.team != %obj.team && %col.team !$= "" && !%obj.specialMove)
+      {
+         //If the bot is skittish, have it run away
+         if (%obj.behavior.isSkittish)
+            %obj.sidestep(%obj);
+
+         if (%obj.getAimObject() <= 0)
+         {
+            if (!%obj.behavior.isSkittish)
+               %obj.setAimObject(%col, $AISK_CHAR_HEIGHT);
+
+            if (%obj.behavior.isAggressive)
+               %obj.ailoop = %obj.schedule($AISK_QUICK_THINK, "Think", %obj);
+         }
+      }
+   }
+   //UAISK+AFX Interop Changes: End
 
     // Try and pickup all items
     if (%col.getClassName() $= "Item")
@@ -93,6 +119,52 @@ function PlayerDataAFX::damage(%this, %obj, %sourceObject, %position, %damage, %
    if (%obj.getState() $= "Dead")
       return;
 
+   //UAISK+AFX Interop Changes: Start
+   if ($UAISK_Is_Available)
+   {
+      //If friendly fire is turned off, and the source and target are on
+      //the same team, then return
+      if ($AISK_FRIENDLY_FIRE == false && $AISK_FREE_FOR_ALL == false)
+      {
+         if (%sourceObject.getClassName() !$= "afxMagicSpell")
+         {
+            if (%sourceObject.sourceObject.team == %obj.team)
+               return;
+         }
+         else if (%sourceObject.caster.team == %obj.team)
+            return;
+      }
+
+      //If this is a bot, set its attention level
+      if (%obj.isbot == true)
+      {
+         //Move a little when hit, aggressive bots move in the "Defending" state
+         if (!%obj.behavior.isAggressive)
+            %obj.sidestep(%obj, true);
+         else if (!%obj.specialMove)
+         {
+            //Item gathering has been commented out because it does not work properly
+            //if (%obj.action !$= "GetHealth")
+            //{
+            //If the bot got sniped, enhance its vision
+            if (%obj.action !$= "Attacking" && %obj.action !$= "Defending" && %obj.getstate() !$= "Dead")
+            {
+               %obj.enhancedefending(%obj);
+               %obj.attentionlevel = 1;
+               %obj.ailoop = %obj.schedule($AISK_QUICK_THINK, "Think", %obj);
+            }
+
+            %obj.action = "Defending";
+            //}
+         }
+
+         //Don't hurt unkillable bots
+         if (!%obj.behavior.isKillable)
+            return;
+      }
+   }
+   //UAISK+AFX Interop Changes: End
+
    // setting damage-level directly allows negative damage for healing
    %obj.setDamageLevel(%obj.getDamageLevel() + %damage);
 
@@ -104,7 +176,13 @@ function PlayerDataAFX::damage(%this, %obj, %sourceObject, %position, %damage, %
    // Deal with client callbacks here because we don't have this
    // information in the onDamage or onDisable methods
    %client = %obj.client;
-   %sourceClient = %sourceObject ? %sourceObject.client : "";
+   %sourceClient = %sourceObject ? %sourceObject.client : 0;
+
+   //UAISK+AFX Interop Changes: Start
+   //Have other bots assist the injured if needed
+   if ($UAISK_Is_Available)
+      checkAboutAssisting(%obj);
+   //UAISK+AFX Interop Changes: End
 
    if (%obj.getState() $= "Dead")
    {
@@ -112,9 +190,45 @@ function PlayerDataAFX::damage(%this, %obj, %sourceObject, %position, %damage, %
      %obj.setRepairRate(0);
      %obj.setEnergyLevel(0);
      %obj.setRechargeRate(0);
-	 
-	 if (isObject(%client))
+
+      //UAISK+AFX Interop Changes: Start
+      if ($UAISK_Is_Available && %obj.isbot == true)
+      {
+         // interrupt active spellcasting
+         if (isObject(%obj.spellBeingCast))
+         {
+            %spell = %obj.spellBeingCast;
+            %obj.spellBeingCast = "";
+            %spell.interrupt();
+         }
+
+         %marker = %obj.marker;
+
+         //Check if the bots should still be respawning
+         if (%marker.respawnCount > 0)
+         {
+            if (%marker.respawnCounter <= 0)
+               %obj.respawn = false;
+
+            %marker.respawnCounter--;
+         }
+
+         //Respawn the bot if needed
+         if (%obj.respawn == true)
+         {
+            %marker.delayRespawn = schedule($AISK_RESPAWN_DELAY, %marker, "AIPlayer::spawn", %marker, true);
+            %this.player = 0;
+         }
+         else
+         {
+            %marker.botBelongsToMe = "";
+            %marker.respawnCount = "";
+            %marker.respawnCounter = "";
+         }
+      }
+      else if (isObject(%client))
          %client.onDeathAFX(%sourceObject, %sourceClient, %damageType, %location);
+      //UAISK+AFX Interop Changes: End
    }
 }
 

@@ -1,29 +1,10 @@
 
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
-// Arcane-FX for MIT Licensed Open Source version of Torque 3D from GarageGames
+// Arcane-FX
 //
 // Shared Effects Elements
 //
-// Copyright (C) 2015 Faust Logic, Inc.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to
-// deal in the Software without restriction, including without limitation the
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-// sell copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-// IN THE SOFTWARE.
-//
+// Copyright (C) Faust Logic, Inc.
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
 // Shared Spell Audio Descriptions
@@ -33,7 +14,7 @@ datablock SFXDescription(SpellAudioDefault_AD)
   volume             = 1.0;
   isLooping          = false;
   is3D               = true;
-  ReferenceDistance  = 20.0;
+  ReferenceDistance  = 2.0;
   MaxDistance        = 100.0;
   channel            = $SimAudioType;
 };
@@ -47,19 +28,19 @@ datablock SFXDescription(SpellAudioLoop_AD : SpellAudioDefault_AD)
 
 datablock SFXDescription(SpellAudioCasting_soft_AD : SpellAudioDefault_AD)
 {
-  ReferenceDistance= 10.0;
+  ReferenceDistance= 2.0;
   MaxDistance = 30;
 };
 
 datablock SFXDescription(SpellAudioCasting_AD : SpellAudioDefault_AD)
 {
-  ReferenceDistance= 20.0;
+  ReferenceDistance= 2.0;
   MaxDistance = 55;
 };
 
 datablock SFXDescription(SpellAudioCasting_loud_AD : SpellAudioDefault_AD)
 {
-  ReferenceDistance= 30.0;
+  ReferenceDistance= 2.0;
   MaxDistance = 80;
 };
 
@@ -67,7 +48,7 @@ datablock SFXDescription(SpellAudioCasting_loud_AD : SpellAudioDefault_AD)
 
 datablock SFXDescription(SpellAudioImpact_AD : SpellAudioDefault_AD)
 {
-  ReferenceDistance= 25.0;
+  ReferenceDistance= 2.0;
   MaxDistance= 120.0;
 };
 
@@ -76,13 +57,13 @@ datablock SFXDescription(SpellAudioImpact_AD : SpellAudioDefault_AD)
 datablock SFXDescription(SpellAudioMissileLoop_AD : SpellAudioDefault_AD)
 {
   isLooping= true;
-  ReferenceDistance= 10.0;
+  ReferenceDistance= 2.0;
 };
 
 datablock SFXDescription(SpellAudioMissileLoop_loud_AD : SpellAudioDefault_AD)
 {
   isLooping= true;
-  ReferenceDistance= 25.0;
+  ReferenceDistance= 2.0;
 };
 
 // good for shockwaves //
@@ -90,14 +71,14 @@ datablock SFXDescription(SpellAudioMissileLoop_loud_AD : SpellAudioDefault_AD)
 datablock SFXDescription(SpellAudioShockwaveLoop_AD : SpellAudioDefault_AD)
 {
   isLooping= true;
-  ReferenceDistance= 35.0;
+  ReferenceDistance= 2.0;
   MaxDistance= 70.0;
 };
 
 datablock SFXDescription(SpellAudioShockwaveLoop_soft_AD : SpellAudioDefault_AD)
 {
   isLooping= true;
-  ReferenceDistance= 8.0;
+  ReferenceDistance= 2.0;
   MaxDistance= 25.0;
 };
 
