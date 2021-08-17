@@ -1172,7 +1172,7 @@ datablock afxEffectWrapperData(TH_ZodeCracksGlowC_EW)
 // subtractive crack zodiac A (small)
 datablock afxZodiacData(TH_ZodeCracksA_dark_CE : SHARED_ZodiacBase_CE)
 {  
-  texture = %mySpellDataPath @ "/TH/zodiacs/TH_cracksA-dark.png";
+  texture = %mySpellDataPath @ "/TH/zodiacs/TH_cracksA_dark.png";
   radius = 13.0;  
   color = "1.0 1.0 1.0 1.0";
   blend = subtractive;
@@ -1195,7 +1195,7 @@ datablock afxEffectWrapperData(TH_ZodeCracksA_dark_EW)
 // additive crack zodiac A (small)
 datablock afxZodiacData(TH_ZodeCracksA_light_CE : SHARED_ZodiacBase_CE)
 {  
-  texture = %mySpellDataPath @ "/TH/zodiacs/TH_cracksA-light.png";
+  texture = %mySpellDataPath @ "/TH/zodiacs/TH_cracksA_light.png";
   radius = 13.0;
   color = "0.5 0.5 0.5 0.5";
   blend = additive;
@@ -1218,7 +1218,7 @@ datablock afxEffectWrapperData(TH_ZodeCracksA_light_EW)
 // subtractive crack zodiac B (medium)
 datablock afxZodiacData(TH_ZodeCracksB_dark_CE : SHARED_ZodiacBase_CE)
 {  
-  texture = %mySpellDataPath @ "/TH/zodiacs/TH_cracksB-dark.png";
+  texture = %mySpellDataPath @ "/TH/zodiacs/TH_cracksB_dark.png";
   radius = 13.0;   
   color = "0.8 0.8 0.8 0.8";
   blend = subtractive;
@@ -1242,7 +1242,7 @@ datablock afxEffectWrapperData(TH_ZodeCracksB_dark_EW)
 // additive crack zodiac B (medium)
 datablock afxZodiacData(TH_ZodeCracksB_light_CE : SHARED_ZodiacBase_CE)
 {  
-  texture = %mySpellDataPath @ "/TH/zodiacs/TH_cracksB-light.png";
+  texture = %mySpellDataPath @ "/TH/zodiacs/TH_cracksB_light.png";
   radius = 13.0;   
   color = "0.65 0.65 0.65 0.65";
   blend = additive;
@@ -1266,7 +1266,7 @@ datablock afxEffectWrapperData(TH_ZodeCracksB_light_EW)
 // subtractive crack zodiac C (large)
 datablock afxZodiacData(TH_ZodeCracksC_dark_CE : SHARED_ZodiacBase_CE)
 {  
-  texture = %mySpellDataPath @ "/TH/zodiacs/TH_cracksC-dark.png";
+  texture = %mySpellDataPath @ "/TH/zodiacs/TH_cracksC_dark.png";
   radius = 13.0;   
   color = "0.6 0.6 0.6 0.6";
   blend = subtractive;
@@ -1290,7 +1290,7 @@ datablock afxEffectWrapperData(TH_ZodeCracksC_dark_EW)
 // additive crack zodiac C (large)
 datablock afxZodiacData(TH_ZodeCracksC_light_CE : SHARED_ZodiacBase_CE)
 {  
-  texture = %mySpellDataPath @ "/TH/zodiacs/TH_cracksC-light.png";
+  texture = %mySpellDataPath @ "/TH/zodiacs/TH_cracksC_light.png";
   radius = 13.0;
   color = "0.6 0.6 0.6 0.6";
   blend = additive;

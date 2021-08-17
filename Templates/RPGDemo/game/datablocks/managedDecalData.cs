@@ -20,23 +20,25 @@
 // IN THE SOFTWARE.
 //-----------------------------------------------------------------------------
 
-singleton Material(DefaultDecalRoadMaterial)
+// This is the default save location for any Decal datablocks created in the
+// Decal Editor (this script is executed from onServerCreated())
+
+datablock DecalData(ScorchBigDecal)
 {
-   diffuseMap[0] = "./defaultRoadTextureTop.png";
-   mapTo = "unmapped_mat";
-   materialTag0 = "RoadAndPath";
+   Material = "DECAL_scorch";
+   size = "5.0";
+   lifeSpan = "50000";
 };
 
-singleton Material(DefaultRoadMaterialTop)
+datablock DecalData(ScorchRXDecal)
 {
-   mapTo = "unmapped_mat";
-   diffuseMap[0] = "./defaultRoadTextureTop.png";
-   materialTag0 = "RoadAndPath";
-};
-
-singleton Material(DefaultRoadMaterialOther)
-{
-   mapTo = "unmapped_mat";
-   diffuseMap[0] = "./defaultRoadTextureOther.png";
-   materialTag0 = "RoadAndPath";
+   Material = "DECAL_RocketEXP";
+   size = "5.0";
+   lifeSpan = "20000";
+   randomize = "1";
+   texRows = "2";
+   texCols = "2";
+   clippingAngle = "80";
+   fadeStartPixelSize = "200";
+   fadeEndPixelSize = "100";
 };

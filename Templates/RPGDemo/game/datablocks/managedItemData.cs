@@ -20,23 +20,5 @@
 // IN THE SOFTWARE.
 //-----------------------------------------------------------------------------
 
-singleton Material(DefaultDecalRoadMaterial)
-{
-   diffuseMap[0] = "./defaultRoadTextureTop.png";
-   mapTo = "unmapped_mat";
-   materialTag0 = "RoadAndPath";
-};
 
-singleton Material(DefaultRoadMaterialTop)
-{
-   mapTo = "unmapped_mat";
-   diffuseMap[0] = "./defaultRoadTextureTop.png";
-   materialTag0 = "RoadAndPath";
-};
 
-singleton Material(DefaultRoadMaterialOther)
-{
-   mapTo = "unmapped_mat";
-   diffuseMap[0] = "./defaultRoadTextureOther.png";
-   materialTag0 = "RoadAndPath";
-};

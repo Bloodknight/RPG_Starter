@@ -168,7 +168,7 @@ datablock afxEffectWrapperData(RM_Zode1_EW)
 //  increases the effect.
 datablock afxZodiacData(RM_Zode1_underglow_CE : RM_Zode1_CE)
 {
-  texture = %mySpellDataPath @ "/RM/zodiacs/RM_caster-underglow256";
+  texture = %mySpellDataPath @ "/RM/zodiacs/RM_caster_underglow256";
   color = "0.7 0.7 0.7 0.7";
   blend = normal;
 };
@@ -456,7 +456,7 @@ datablock afxEffectWrapperData(RM_CorpseDevil_EW)
 // Devil Zode Underglow
 datablock afxZodiacData(RM_CorpseDevil_underglow_CE : RM_CorpseDevil_CE)
 {
-  texture = %mySpellDataPath @ "/RM/zodiacs/RM_devil-underglow256";
+  texture = %mySpellDataPath @ "/RM/zodiacs/RM_devil_underglow256";
   color = "0.6 0.6 0.6 0.6";
   blend = normal;
 };

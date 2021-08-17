@@ -187,19 +187,19 @@ datablock SFXDescription(TH_SpellAudioCasting_softer_AD : SpellAudioCasting_AD)
 
 datablock SFXProfile(TH_CasterLightningSnd_1_CE)
 {
-  fileName = %mySpellDataPath @ "/TH/sounds/TH_lightningEdit_1-4.ogg";
+  fileName = %mySpellDataPath @ "/TH/sounds/TH_lightningEdit_1_4.ogg";
   description = SpellAudioCasting_AD;
   preload = true;
 };
 datablock SFXProfile(TH_CasterLightningSnd_2_CE)
 {
-  fileName = %mySpellDataPath @ "/TH/sounds/TH_lightningEdit_2-4.ogg";
+  fileName = %mySpellDataPath @ "/TH/sounds/TH_lightningEdit_2_4.ogg";
   description = SpellAudioCasting_AD;
   preload = true;
 };
 datablock SFXProfile(TH_CasterLightningSnd_3_CE)
 {
-  fileName = %mySpellDataPath @ "/TH/sounds/TH_lightningEdit_3-2.ogg";
+  fileName = %mySpellDataPath @ "/TH/sounds/TH_lightningEdit_3_2.ogg";
   description = SpellAudioCasting_AD;
   preload = true;
 };
@@ -211,36 +211,10 @@ datablock SFXProfile(TH_CasterLightningSnd_4_CE)
 };
 datablock SFXProfile(TH_CasterLightningSnd_5_CE)
 {
-  fileName = %mySpellDataPath @ "/TH/sounds/TH_lightningEdit_5-2.ogg";
+  fileName = %mySpellDataPath @ "/TH/sounds/TH_lightningEdit_5_2.ogg";
   description = SpellAudioCasting_AD;
   preload = true;
 };
-
-//datablock SFXProfile(TH_CasterLightningSnd_1_softer_CE : TH_CasterLightningSnd_1_soft_CE)
-//{
-//  fileName = %mySpellDataPath @ "/TH/sounds/TH_lightningEdit_1-4--soft.ogg";
-//  //description = TH_SpellAudioCasting_softer_AD;
-//};
-//datablock SFXProfile(TH_CasterLightningSnd_2_softer_CE : TH_CasterLightningSnd_2_soft_CE)
-//{
-//  fileName = %mySpellDataPath @ "/TH/sounds/TH_lightningEdit_2-4--soft.ogg";//--softer.ogg";
-//  //description = TH_SpellAudioCasting_softer_AD;
-//};
-//datablock SFXProfile(TH_CasterLightningSnd_3_softer_CE : TH_CasterLightningSnd_3_soft_CE)
-//{
-//  fileName = %mySpellDataPath @ "/TH/sounds/TH_lightningEdit_3-2--soft.ogg";
-//  //description = TH_SpellAudioCasting_softer_AD;
-//};
-//datablock SFXProfile(TH_CasterLightningSnd_4_softer_CE : TH_CasterLightningSnd_4_soft_CE)
-//{
-//  fileName = %mySpellDataPath @ "/TH/sounds/TH_lightningEdit_4--soft.ogg";
-//  //description = TH_SpellAudioCasting_softer_AD;
-//};
-//datablock SFXProfile(TH_CasterLightningSnd_5_softer_CE : TH_CasterLightningSnd_5_soft_CE)
-//{
-//  fileName = %mySpellDataPath @ "/TH/sounds/TH_lightningEdit_5-2--soft.ogg";
-//  //description = TH_SpellAudioCasting_softer_AD;
-//};
 
 %TH_CasterLightningSnd_1_lifetime = 0.5018;
 %TH_CasterLightningSnd_2_lifetime = 0.4233;

@@ -146,7 +146,7 @@ datablock afxEffectWrapperData(FB_Zode1_EW)
 //  increases the effect.
 datablock afxZodiacData(FB_Zode1_underglow_CE : FB_Zode1_CE)
 {
-  texture = %mySpellDataPath @ "/FB/zodiacs/FB_caster-underglow256";
+  texture = %mySpellDataPath @ "/FB/zodiacs/FB_caster_underglow256";
   color = "0.5 0.5 0.5 0.5";
   blend = normal;
 };
@@ -199,7 +199,7 @@ datablock afxEffectWrapperData(FB_Zode2_underglow_EW : FB_Zode2_EW)
 // A white zodiac with sketchy runes. 
 datablock afxZodiacData(FB_Zode3_CE : SHARED_ZodiacBase_CE)
 {  
-  texture = %mySpellDataPath @ "/FB/zodiacs/FB_caster-symbols";
+  texture = %mySpellDataPath @ "/FB/zodiacs/_symbols";
   radius = 3.0;
   startAngle = 180.0;
   rotationRate = -30.0;

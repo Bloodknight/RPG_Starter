@@ -144,7 +144,7 @@ datablock afxEffectWrapperData(GBoF_Zode1_EW)
 //  increases the effect.
 datablock afxZodiacData(GBoF_Zode1_underglow_CE : GBoF_Zode1_CE)
 {
-  texture = %mySpellDataPath @ "/GBoF/zodiacs/GBofF_rings-underglow256";
+  texture = %mySpellDataPath @ "/GBoF/zodiacs/GBofF_rings_underglow256";
   color = "0.45 0.45 0.45 0.45";
   blend = normal;
 };
@@ -1148,7 +1148,7 @@ datablock afxEffectWrapperData(GBoF_ImpactZodeFast3_EW)
 
 datablock afxZodiacData(GBoF_EtherealImpactZode1_CE)
 {  
-  texture = %mySpellDataPath @ "/GBoF/zodiacs/GBofF_impactB-1";
+  texture = %mySpellDataPath @ "/GBoF/zodiacs/GBofF_impactB_1";
   radius = 1.0;
   startAngle = 0.0;
   rotationRate = 40.0;
@@ -1171,7 +1171,7 @@ datablock afxEffectWrapperData(GBoF_EtherealImpactZode1_EW)
 
 datablock afxZodiacData(GBoF_EtherealImpactZode2_CE)
 {  
-  texture = %mySpellDataPath @ "/GBoF/zodiacs/GBofF_impactB-2";
+  texture = %mySpellDataPath @ "/GBoF/zodiacs/GBofF_impactB_2";
   radius = 1.0;
   startAngle = 0.0;
   rotationRate = -40.0;

@@ -20,23 +20,24 @@
 // IN THE SOFTWARE.
 //-----------------------------------------------------------------------------
 
-singleton Material(DefaultDecalRoadMaterial)
+singleton Material(DECAL_scorch)
 {
-   diffuseMap[0] = "./defaultRoadTextureTop.png";
-   mapTo = "unmapped_mat";
-   materialTag0 = "RoadAndPath";
+   baseTex[0] = "./scorch_decal.png";
+
+   translucent = true;
+   translucentBlendOp = None;
+   translucentZWrite = true;
+   alphaTest = true;
+   alphaRef = 84;
 };
 
-singleton Material(DefaultRoadMaterialTop)
+singleton Material(DECAL_RocketEXP)
 {
-   mapTo = "unmapped_mat";
-   diffuseMap[0] = "./defaultRoadTextureTop.png";
-   materialTag0 = "RoadAndPath";
+   baseTex[0] = "data/FPSGameplay/art/decals/rBlast";
+
+   vertColor[0] = true;
+   translucent = true;
+   translucentBlendOp = LerpAlpha;
+   translucentZWrite = true;
 };
 
-singleton Material(DefaultRoadMaterialOther)
-{
-   mapTo = "unmapped_mat";
-   diffuseMap[0] = "./defaultRoadTextureOther.png";
-   materialTag0 = "RoadAndPath";
-};
