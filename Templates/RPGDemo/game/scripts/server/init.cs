@@ -71,16 +71,10 @@ function initServer()
    initBaseServer();
 
    // Load up game server support scripts
-   exec("./commands.cs");
-   exec("./game.cs");
-
-   // AFX MOD <<
-   exec("./afx/afxInit.cs");
-   // AFX MOD >>
-
-   // DATABLOCK CACHE MOD <<
-   exec("./afx/afxDatablockCache.cs");
-   // DATABLOCK CACHE MOD >>
+   exec("./scripts/server/commands.cs");
+   exec("./scripts/server/game.cs");
+   exec("./scripts/server/afx/afxInit.cs");
+   exec("./scripts/server/afx/afxDatablockCache.cs");
 }
 
 
