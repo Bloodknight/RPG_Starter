@@ -28,7 +28,7 @@
 //
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(SoV_CometGlow_MTL)
+singleton Material(SoV_CometGlow_MTL)
 {
    mapTo = "FT_FireBurst_1.png";
    diffuseMap[0] = "FT_FireBurst_1";
@@ -41,7 +41,7 @@ new Material(SoV_CometGlow_MTL)
 // this rock material is shared with SN
 if (!isObject(FT_Rocks_MTL))
 {
-   new Material(FT_Rocks_MTL)
+   singleton Material(FT_Rocks_MTL)
    {
       mapTo = "FT_rock1.png";
       diffuseMap[0] = "FT_rock1";

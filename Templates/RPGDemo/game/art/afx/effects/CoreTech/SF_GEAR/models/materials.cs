@@ -28,7 +28,7 @@
 //
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(SFH_helmet_MTL)
+singleton Material(SFH_helmet_MTL)
 {
    mapTo = "helmet.png";
    diffuseMap[0] = "helmet";
@@ -38,7 +38,7 @@ new Material(SFH_helmet_MTL)
    castShadows = true;
 };
 
-new Material(SFH_flasher_MTL)
+singleton Material(SFH_flasher_MTL)
 {
    mapTo = "helmet_light";
    diffuseMap[0] = "helmet";

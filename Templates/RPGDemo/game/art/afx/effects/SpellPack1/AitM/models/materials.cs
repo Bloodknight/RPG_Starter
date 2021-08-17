@@ -28,7 +28,7 @@
 //
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(AitM_casterEye_MTL)
+singleton Material(AitM_casterEye_MTL)
 {
    mapTo = "AitM_casterEye.png";
    diffuseMap[0] = "AitM_casterEye";
@@ -38,7 +38,7 @@ new Material(AitM_casterEye_MTL)
    castShadows = false;
 };
 
-new Material(AitM_casterHead_MTL)
+singleton Material(AitM_casterHead_MTL)
 {
    mapTo = "AitM_casterHead.png";
    diffuseMap[0] = "AitM_casterHead";
@@ -48,7 +48,7 @@ new Material(AitM_casterHead_MTL)
    castShadows = false;
 };
 
-new Material(AitM_casterTeeth_MTL)
+singleton Material(AitM_casterTeeth_MTL)
 {
    mapTo = "AitM_casterTeeth.png";
    diffuseMap[0] = "AitM_casterTeeth";
@@ -58,7 +58,7 @@ new Material(AitM_casterTeeth_MTL)
    castShadows = false;
 };
 
-new Material(AitM_crazyMaskA_MTL)
+singleton Material(AitM_crazyMaskA_MTL)
 {
    mapTo = "AitM_crazyMaskA.png";
    diffuseMap[0] = "AitM_crazyMaskA";
@@ -68,7 +68,7 @@ new Material(AitM_crazyMaskA_MTL)
    castShadows = false;
 };
 
-new Material(AitM_crazyMaskB_MTL : AitM_crazyMaskA_MTL)
+singleton Material(AitM_crazyMaskB_MTL : AitM_crazyMaskA_MTL)
 {
    mapTo = "AitM_crazyMaskB.png";
    diffuseMap[0] = "AitM_crazyMaskB";
@@ -78,7 +78,7 @@ new Material(AitM_crazyMaskB_MTL : AitM_crazyMaskA_MTL)
    castShadows = false;
 };
 
-new Material(AitM_crazyMaskEyes_MTL)
+singleton Material(AitM_crazyMaskEyes_MTL)
 {
    mapTo = "AitM_MaskEyes";
    diffuseMap[0] = "AitM_casterEye";

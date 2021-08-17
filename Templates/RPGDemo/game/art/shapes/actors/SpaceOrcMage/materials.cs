@@ -7,7 +7,7 @@
 // Copyright (C) Faust Logic, Inc.
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(SpaceOrcEye_MTL)
+singleton Material(SpaceOrcEye_MTL)
 {
    diffuseMap[0] = "orc_ID6_eye";
    emissive[0] = true;
@@ -17,7 +17,7 @@ new Material(SpaceOrcEye_MTL)
 // Note - Setting the cubemap is currently problematic with macos
 if ($platform $= "macos") // AFX OFF
 {
-   new Material(SpaceOrc_MTL)
+   singleton Material(SpaceOrc_MTL)
    {
       diffuseMap[0] = "Orc_Material";
       bumpTex[0] = "Orc_Material_normal";
@@ -27,7 +27,7 @@ if ($platform $= "macos") // AFX OFF
       specularPower[0] = 8.0;
    };
 
-   new Material(SpaceOrc_Night_MTL)
+   singleton Material(SpaceOrc_Night_MTL)
    {
       mapTo = "night.body";
       diffuseMap[0] = "Orc_Material";
@@ -40,7 +40,7 @@ if ($platform $= "macos") // AFX OFF
 }
 else
 {
-   new Material(SpaceOrc_MTL)
+   singleton Material(SpaceOrc_MTL)
    {
       diffuseMap[0] = "Orc_Material";
       bumpTex[0] = "Orc_Material_normal";
@@ -50,7 +50,7 @@ else
       specularPower[0] = 8.0;
    };
 
-   new Material(SpaceOrc_Night_MTL)
+   singleton Material(SpaceOrc_Night_MTL)
    {
       mapTo = "night.body";
       diffuseMap[0] = "Orc_Material";

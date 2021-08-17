@@ -28,7 +28,7 @@
 //
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(CTaF_banana_MTL)
+singleton Material(CTaF_banana_MTL)
 {
    mapTo = "CTaF_banana.png";
    diffuseMap[0] = "CTaF_banana";

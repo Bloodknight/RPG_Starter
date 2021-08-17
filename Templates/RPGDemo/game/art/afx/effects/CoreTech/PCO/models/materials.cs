@@ -28,7 +28,7 @@
 //
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(PCO_Hat_MTL)
+singleton Material(PCO_Hat_MTL)
 {
    mapTo = "PCO_hat.png";
    diffuseMap[0] = "PCO_hat";
@@ -39,7 +39,7 @@ new Material(PCO_Hat_MTL)
    castShadows = false;
 };
 
-new Material(PCO_Wand_MTL)
+singleton Material(PCO_Wand_MTL)
 {
    mapTo = "PCO_wand.png";
    diffuseMap[0] = "PCO_wand";

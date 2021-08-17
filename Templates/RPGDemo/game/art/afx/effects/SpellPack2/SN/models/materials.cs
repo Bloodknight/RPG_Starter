@@ -31,7 +31,7 @@
 // this rock material is shared with SOV
 if (!isObject(FT_Rocks_MTL))
 {
-    new Material(FT_Rocks_MTL)
+    singleton Material(FT_Rocks_MTL)
     {
         mapTo = "FT_rock1.png";
         diffuseMap[0] = "FT_rock1";

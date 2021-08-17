@@ -28,7 +28,7 @@
 //
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(GBoF_PortalBeam_MTL)
+singleton Material(GBoF_PortalBeam_MTL)
 {
    mapTo = "GBoF_beam";
    diffuseMap[0] = "portalbeamcolor2";

@@ -28,7 +28,7 @@
 //
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(IOP_beamA_MTL)
+singleton Material(IOP_beamA_MTL)
 {
    mapTo = "IOP_beamA.png";
    diffuseMap[0] = "IOP_beamA";
@@ -38,7 +38,7 @@ new Material(IOP_beamA_MTL)
    castShadows = false;
 };
 
-new Material(IOP_beamB_MTL)
+singleton Material(IOP_beamB_MTL)
 {
    mapTo = "IOP_beamB.png";
    diffuseMap[0] = "IOP_beamB";
@@ -48,7 +48,7 @@ new Material(IOP_beamB_MTL)
    castShadows = false;
 };
 
-new Material(IOP_beamC_MTL)
+singleton Material(IOP_beamC_MTL)
 {
    mapTo = "IOP_beamC.png";
    diffuseMap[0] = "IOP_beamC";
@@ -58,7 +58,7 @@ new Material(IOP_beamC_MTL)
    castShadows = false;
 };
 
-new Material(IOP_beamRing_MTL)
+singleton Material(IOP_beamRing_MTL)
 {
    mapTo = "IOP_beamRing.png";
    diffuseMap[0] = "IOP_beamRing";
@@ -68,7 +68,7 @@ new Material(IOP_beamRing_MTL)
    castShadows = false;
 };
 
-new Material(IOP_bug_MTL)
+singleton Material(IOP_bug_MTL)
 {
    mapTo = "IOP_bug.png";
    diffuseMap[0] = "IOP_bug";
@@ -78,7 +78,7 @@ new Material(IOP_bug_MTL)
    castShadows = false;
 };
 
-new Material(IOP_bugPulse_MTL)
+singleton Material(IOP_bugPulse_MTL)
 {
    mapTo = "IOP_bugPulse.png";
    diffuseMap[0] = "IOP_bugPulse";
@@ -88,7 +88,7 @@ new Material(IOP_bugPulse_MTL)
    castShadows = false;
 };
 
-new Material(IOP_bugPulseSparkle_MTL)
+singleton Material(IOP_bugPulseSparkle_MTL)
 {
    mapTo = "IOP_bugPulseSparkle.png";
    diffuseMap[0] = "IOP_bugPulseSparkle";
@@ -98,7 +98,7 @@ new Material(IOP_bugPulseSparkle_MTL)
    castShadows = false;
 };
 
-new Material(IOP_bugSymbolA_MTL)
+singleton Material(IOP_bugSymbolA_MTL)
 {
    mapTo = "IOP_bugSymbolA.png";
    diffuseMap[0] = "IOP_bugSymbolA";
@@ -108,7 +108,7 @@ new Material(IOP_bugSymbolA_MTL)
    castShadows = false;
 };
 
-new Material(IOP_bugSymbolB_MTL)
+singleton Material(IOP_bugSymbolB_MTL)
 {
    mapTo = "IOP_bugSymbolB.png";
    diffuseMap[0] = "IOP_bugSymbolB";
@@ -118,7 +118,7 @@ new Material(IOP_bugSymbolB_MTL)
    castShadows = false;
 };
 
-new Material(IOP_insectSparkle_MTL)
+singleton Material(IOP_insectSparkle_MTL)
 {
    mapTo = "IOP_insectSparkle.png";
    diffuseMap[0] = "IOP_insectSparkle";
@@ -128,7 +128,7 @@ new Material(IOP_insectSparkle_MTL)
    castShadows = false;
 };
 
-new Material(IOP_insectHead_MTL)
+singleton Material(IOP_insectHead_MTL)
 {
    mapTo = "IOP_insectHead.png";
    diffuseMap[0] = "IOP_insectHead";
@@ -138,7 +138,7 @@ new Material(IOP_insectHead_MTL)
    castShadows = false;
 };
 
-new Material(IOP_insectEye_MTL)
+singleton Material(IOP_insectEye_MTL)
 {
    mapTo = "IOP_insectEye";
    diffuseMap[0] = "IOP_insectHead";
@@ -148,7 +148,7 @@ new Material(IOP_insectEye_MTL)
    castShadows = false;
 };
 
-new Material(IOP_insectJaws_MTL)
+singleton Material(IOP_insectJaws_MTL)
 {
    mapTo = "IOP_insectJaws";
    diffuseMap[0] = "IOP_insectHead";
@@ -158,7 +158,7 @@ new Material(IOP_insectJaws_MTL)
    castShadows = false;
 };
 
-new Material(IOP_insectSegment_MTL)
+singleton Material(IOP_insectSegment_MTL)
 {
    mapTo = "IOP_insectSegment.png";
    diffuseMap[0] = "IOP_insectSegment";
@@ -168,7 +168,7 @@ new Material(IOP_insectSegment_MTL)
    castShadows = false;
 };
 
-new Material(IOP_insectWings_MTL)
+singleton Material(IOP_insectWings_MTL)
 {
    mapTo = "IOP_insectWings.png";
    diffuseMap[0] = "IOP_insectWings";
@@ -178,7 +178,7 @@ new Material(IOP_insectWings_MTL)
    castShadows = false;
 };
 
-new Material(IOP_insectWings_transA_MTL)
+singleton Material(IOP_insectWings_transA_MTL)
 {
    mapTo = "IOP_insectWings_transA.png";
    diffuseMap[0] = "IOP_insectWings_transA";
@@ -188,7 +188,7 @@ new Material(IOP_insectWings_transA_MTL)
    castShadows = false;
 };
 
-new Material(IOP_insectWings_transB_MTL)
+singleton Material(IOP_insectWings_transB_MTL)
 {
    mapTo = "IOP_insectWings_transB.png";
    diffuseMap[0] = "IOP_insectWings_transB";

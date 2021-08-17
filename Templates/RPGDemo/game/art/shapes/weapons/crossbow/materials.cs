@@ -3,13 +3,13 @@
 // Crossbow materials
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(CrossbowClip_MTL)
+singleton Material(CrossbowClip_MTL)
 {
     mapTo = "clip";
     diffuseMap[0] = "clip";
 };
 
-new Material(Crossbow_MTL)
+singleton Material(Crossbow_MTL)
 {
     mapTo = "crossbow";
     diffuseMap[0] = "crossbow";

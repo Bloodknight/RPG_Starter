@@ -24,7 +24,7 @@
 //
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material( WastelandGrass )
+singleton Material( WastelandGrass )
 {
    MapTo = "wl_grass";
    FootstepSoundId = 1;

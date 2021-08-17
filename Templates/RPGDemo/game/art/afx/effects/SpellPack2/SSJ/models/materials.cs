@@ -28,7 +28,7 @@
 //
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(SSJ_LockOnFlare_MTL)
+singleton Material(SSJ_LockOnFlare_MTL)
 {
    mapTo = "LockOnFlare.png";
    diffuseMap[0] = "LockOnFlare";
@@ -38,7 +38,7 @@ new Material(SSJ_LockOnFlare_MTL)
    castShadows = false;
 };
 
-new Material(SSJ_LockRing_MTL)
+singleton Material(SSJ_LockRing_MTL)
 {
    mapTo = "LockRing.png";
    diffuseMap[0] = "LockRing";
@@ -48,7 +48,7 @@ new Material(SSJ_LockRing_MTL)
    castShadows = false;
 };
 
-new Material(SSJ_LockOn_SkeletalHand_MTL)
+singleton Material(SSJ_LockOn_SkeletalHand_MTL)
 {
    mapTo = "SSJ_bone.png";
    diffuseMap[0] = "SSJ_bone";
@@ -58,7 +58,7 @@ new Material(SSJ_LockOn_SkeletalHand_MTL)
    castShadows = true;
 };
 
-new Material(SSJ_WingHand_MTL)
+singleton Material(SSJ_WingHand_MTL)
 {
    mapTo = "handBone_ghostly.png";
    diffuseMap[0] = "handBone_ghostly";

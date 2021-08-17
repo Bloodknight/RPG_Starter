@@ -52,7 +52,7 @@ new ShaderData(CK_iceShards_Shader)
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//
 // Materials and CustomMaterials
 
-new Material(CK_SnowBall_MTL)
+singleton Material(CK_SnowBall_MTL)
 {
    mapTo = "CK_SnowBall.png";
    diffuseMap[0] = "CK_SnowBall";
@@ -64,7 +64,7 @@ new Material(CK_SnowBall_MTL)
 
 //~~~~~~~~~~~~~~~~~~~~//
 
-new Material(CK_IceCrystalsGlint_MTL)
+singleton Material(CK_IceCrystalsGlint_MTL)
 {
    mapTo = "CK_IceCrystalsGlint";
    diffuseMap[0] = "CK_IceCrystalsA";
@@ -76,7 +76,7 @@ new Material(CK_IceCrystalsGlint_MTL)
 
 //~~~~~~~~~~~~~~~~~~~~//
 
-new Material(CK_IceCrystalsA_MTL)
+singleton Material(CK_IceCrystalsA_MTL)
 {
    mapTo = "CK_IceCrystalsA.png";
    diffuseMap[0] = "CK_IceCrystalsB_alpha";
@@ -86,7 +86,7 @@ new Material(CK_IceCrystalsA_MTL)
    castShadows = false;
 };
 
-new Material(CK_IceCrystalsB_MTL)
+singleton Material(CK_IceCrystalsB_MTL)
 {
    mapTo = "CK_IceCrystalsB.png";
    diffuseMap[0] = "CK_IceCrystalsB_alpha";

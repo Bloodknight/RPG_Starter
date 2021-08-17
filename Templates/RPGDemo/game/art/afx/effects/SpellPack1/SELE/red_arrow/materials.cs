@@ -28,7 +28,7 @@
 //
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(SELE_red_arrow_MTL)
+singleton Material(SELE_red_arrow_MTL)
 {
    mapTo = "afx_selectionArrow.png";
    diffuseMap[0] = "afx_selectionArrow";

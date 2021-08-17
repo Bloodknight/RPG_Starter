@@ -30,7 +30,7 @@
 
 // Drone
 
-new Material(OL_Drone_MTL)
+singleton Material(OL_Drone_MTL)
 {
    mapTo = "satellite.png";
    diffuseMap[0] = "satellite";
@@ -41,7 +41,7 @@ new Material(OL_Drone_MTL)
    castShadows = true;
 };
 
-new Material(OL_DroneFlare1_MTL)
+singleton Material(OL_DroneFlare1_MTL)
 {
    mapTo = "satellite_flare1";
    diffuseMap[0] = "satellite";
@@ -51,14 +51,14 @@ new Material(OL_DroneFlare1_MTL)
    castShadows = false;
 };
 
-new Material(OL_DroneFlare2_MTL : OL_DroneFlare1_MTL)
+singleton Material(OL_DroneFlare2_MTL : OL_DroneFlare1_MTL)
 {
    mapTo = "satellite_flare2";
 };
 
 // Laser Beams
 
-new Material(OL_beamA_MTL)
+singleton Material(OL_beamA_MTL)
 {
    mapTo = "beamA.png";
    diffuseMap[0] = "beamA";
@@ -68,7 +68,7 @@ new Material(OL_beamA_MTL)
    castShadows = false;
 };
 
-new Material(OL_beamB_MTL)
+singleton Material(OL_beamB_MTL)
 {
    mapTo = "beamB.png";
    diffuseMap[0] = "beamB";
@@ -78,7 +78,7 @@ new Material(OL_beamB_MTL)
    castShadows = false;
 };
 
-new Material(OL_beamC_MTL)
+singleton Material(OL_beamC_MTL)
 {
    mapTo = "beamC.png";
    diffuseMap[0] = "beamC";
@@ -90,7 +90,7 @@ new Material(OL_beamC_MTL)
 
 // Flares
 
-new Material(OL_beam_flare_head_MTL)
+singleton Material(OL_beam_flare_head_MTL)
 {
    mapTo = "beam_flare_head.png";
    diffuseMap[0] = "beam_flare_head";

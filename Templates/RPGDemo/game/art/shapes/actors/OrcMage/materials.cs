@@ -7,7 +7,7 @@
 // Copyright (C) Faust Logic, Inc.
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(OrcMage_MTL)
+singleton Material(OrcMage_MTL)
 {
    mapTo = "player";
    diffuseMap[0] = "player";

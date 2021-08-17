@@ -20,7 +20,7 @@
 // IN THE SOFTWARE.
 //-----------------------------------------------------------------------------
 
-new Material(CommonPlayerFootprint)
+singleton Material(CommonPlayerFootprint)
 {
    diffuseMap[0] = "footprint";
    vertColor[0] = true;

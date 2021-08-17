@@ -28,7 +28,7 @@
 //
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(MoK_HandBeam_MTL)
+singleton Material(MoK_HandBeam_MTL)
 {
    mapTo = "MoK_handBeam.png";
    diffuseMap[0] = "MoK_handBeam";
@@ -38,7 +38,7 @@ new Material(MoK_HandBeam_MTL)
    castShadows = false;
 };
 
-new Material(SMS_HandBeam_MTL)
+singleton Material(SMS_HandBeam_MTL)
 {
    mapTo = "SMS_handBeam.png";
    diffuseMap[0] = "SMS_handBeam";
@@ -48,7 +48,7 @@ new Material(SMS_HandBeam_MTL)
    castShadows = false;
 };
 
-new Material(MoK_OrcBeam_MTL)
+singleton Material(MoK_OrcBeam_MTL)
 {
    mapTo = "MoK_OrcBeam.png";
    diffuseMap[0] = "MoK_OrcBeam";
@@ -58,7 +58,7 @@ new Material(MoK_OrcBeam_MTL)
    castShadows = false;
 };
 
-new Material(SMS_OrcBeam_MTL)
+singleton Material(SMS_OrcBeam_MTL)
 {
    mapTo = "SMS_orcBeam.png";
    diffuseMap[0] = "SMS_orcBeam";

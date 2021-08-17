@@ -28,7 +28,7 @@
 //
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(AP_ring_MTL)
+singleton Material(AP_ring_MTL)
 {
    mapTo = "AP_ring.png";
    diffuseMap[0] = "AP_ring";
@@ -38,7 +38,7 @@ new Material(AP_ring_MTL)
    castShadows = false;
 };
 
-new Material(AP_beam_MTL)
+singleton Material(AP_beam_MTL)
 {
    mapTo = "AP_beam.png";
    diffuseMap[0] = "AP_beam";

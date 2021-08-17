@@ -28,7 +28,7 @@
 //
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(BFB_sky_lightning_MTL)
+singleton Material(BFB_sky_lightning_MTL)
 {
    mapTo = "ltest2.png";
    diffuseMap[0] = "ltest2";
@@ -38,7 +38,7 @@ new Material(BFB_sky_lightning_MTL)
    castShadows = false;
 };
 
-new Material(BFB_impact_lightning_MTL)
+singleton Material(BFB_impact_lightning_MTL)
 {
    mapTo = "ltest3.png";
    diffuseMap[0] = "ltest3";

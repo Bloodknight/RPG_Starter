@@ -28,7 +28,7 @@
 //
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(FST_CastingBeamA_MTL)
+singleton Material(FST_CastingBeamA_MTL)
 {
    mapTo = "FT_castingBeamA_1.png";
    diffuseMap[0] = "FT_castingBeamA_1";
@@ -38,7 +38,7 @@ new Material(FST_CastingBeamA_MTL)
    castShadows = false;
 };
 
-new Material(FST_PentagramBeamA_MTL)
+singleton Material(FST_PentagramBeamA_MTL)
 {
    mapTo = "FT_pentagramBeamA_1.png";
    diffuseMap[0] = "FT_pentagramBeamA_1";
@@ -48,7 +48,7 @@ new Material(FST_PentagramBeamA_MTL)
    castShadows = false;
 };
 
-new Material(FST_Staff_MTL)
+singleton Material(FST_Staff_MTL)
 {
    mapTo = "FT_staff1.png";
    diffuseMap[0] = "FT_staff1";
@@ -58,7 +58,7 @@ new Material(FST_Staff_MTL)
    castShadows = true;
 };
 
-new Material(FST_StaffStikeGlow_MTL)
+singleton Material(FST_StaffStikeGlow_MTL)
 {
    mapTo = "FT_strikeGlow_1.png";
    diffuseMap[0] = "FT_strikeGlow_1";

@@ -30,7 +30,7 @@
 
 // CATERPILLAR
 
-new Material(SFM_caterpillar_head_MTL)
+singleton Material(SFM_caterpillar_head_MTL)
 {
    mapTo = "SFM_caterpillar_head.png";
    diffuseMap[0] = "SFM_caterpillar_head";
@@ -40,7 +40,7 @@ new Material(SFM_caterpillar_head_MTL)
    castShadows = true;
 };
 
-new Material(SFM_caterpillar_headseg_MTL)
+singleton Material(SFM_caterpillar_headseg_MTL)
 {
    mapTo = "SFM_caterpillar_headsegment.png";
    diffuseMap[0] = "SFM_caterpillar_headsegment";
@@ -50,7 +50,7 @@ new Material(SFM_caterpillar_headseg_MTL)
    castShadows = true;
 };
 
-new Material(SFM_caterpillar_hair_MTL)
+singleton Material(SFM_caterpillar_hair_MTL)
 {
    mapTo = "SFM_caterpillar_hair.png";
    diffuseMap[0] = "SFM_caterpillar_hair";
@@ -60,7 +60,7 @@ new Material(SFM_caterpillar_hair_MTL)
    castShadows = false;
 };
 
-new Material(SFM_caterpillar_seg_MTL)
+singleton Material(SFM_caterpillar_seg_MTL)
 {
    mapTo = "SFM_caterpillar_segment.png";
    diffuseMap[0] = "SFM_caterpillar_segment";
@@ -72,7 +72,7 @@ new Material(SFM_caterpillar_seg_MTL)
 
 // TINY MOTHS
 
-new Material(SFM_tmoth_body_MTL)
+singleton Material(SFM_tmoth_body_MTL)
 {
    mapTo = "SFM_tmoth_body.png";
    diffuseMap[0] = "SFM_tmoth_body";
@@ -82,7 +82,7 @@ new Material(SFM_tmoth_body_MTL)
    castShadows = false;
 };
 
-new Material(SFM_tmoth_body_blue_MTL)
+singleton Material(SFM_tmoth_body_blue_MTL)
 {
    mapTo = "SFM_tmoth_body_blue.png";
    diffuseMap[0] = "SFM_tmoth_body_blue";
@@ -92,7 +92,7 @@ new Material(SFM_tmoth_body_blue_MTL)
    castShadows = false;
 };
 
-new Material(SFM_tmoth_body_green_MTL)
+singleton Material(SFM_tmoth_body_green_MTL)
 {
    mapTo = "SFM_tmoth_body_green.png";
    diffuseMap[0] = "SFM_tmoth_body_green";
@@ -102,7 +102,7 @@ new Material(SFM_tmoth_body_green_MTL)
    castShadows = false;
 };
 
-new Material(SFM_tmoth_body_magenta_MTL)
+singleton Material(SFM_tmoth_body_magenta_MTL)
 {
    mapTo = "SFM_tmoth_body_magenta.png";
    diffuseMap[0] = "SFM_tmoth_body_magenta";
@@ -112,7 +112,7 @@ new Material(SFM_tmoth_body_magenta_MTL)
    castShadows = false;
 };
 
-new Material(SFM_tmoth_body_orange_MTL)
+singleton Material(SFM_tmoth_body_orange_MTL)
 {
    mapTo = "SFM_tmoth_body_orange.png";
    diffuseMap[0] = "SFM_tmoth_body_orange";
@@ -122,7 +122,7 @@ new Material(SFM_tmoth_body_orange_MTL)
    castShadows = false;
 };
 
-new Material(SFM_tmoth_wings_MTL)
+singleton Material(SFM_tmoth_wings_MTL)
 {
    mapTo = "SFM_tmoth_wings.png";
    diffuseMap[0] = "SFM_tmoth_wings";
@@ -132,7 +132,7 @@ new Material(SFM_tmoth_wings_MTL)
    castShadows = false;
 };
 
-new Material(SFM_tmoth_wings_blue_MTL)
+singleton Material(SFM_tmoth_wings_blue_MTL)
 {
    mapTo = "SFM_tmoth_wings_blue.png";
    diffuseMap[0] = "SFM_tmoth_wings_blue";
@@ -142,7 +142,7 @@ new Material(SFM_tmoth_wings_blue_MTL)
    castShadows = false;
 };
 
-new Material(SFM_tmoth_wings_green_MTL)
+singleton Material(SFM_tmoth_wings_green_MTL)
 {
    mapTo = "SFM_tmoth_wings_green.png";
    diffuseMap[0] = "SFM_tmoth_wings_green";
@@ -152,7 +152,7 @@ new Material(SFM_tmoth_wings_green_MTL)
    castShadows = false;
 };
 
-new Material(SFM_tmoth_wings_magenta_MTL)
+singleton Material(SFM_tmoth_wings_magenta_MTL)
 {
    mapTo = "SFM_tmoth_wings_magenta.png";
    diffuseMap[0] = "SFM_tmoth_wings_magenta";
@@ -162,7 +162,7 @@ new Material(SFM_tmoth_wings_magenta_MTL)
    castShadows = false;
 };
 
-new Material(SFM_tmoth_wings_orange_MTL)
+singleton Material(SFM_tmoth_wings_orange_MTL)
 {
    mapTo = "SFM_tmoth_wings_orange.png";
    diffuseMap[0] = "SFM_tmoth_wings_orange";
@@ -176,7 +176,7 @@ new Material(SFM_tmoth_wings_orange_MTL)
 
 // COCOON
 
-new Material(SFM_cocoon_top_MTL)
+singleton Material(SFM_cocoon_top_MTL)
 {
    mapTo = "SFM_cocoon_top.png";
    diffuseMap[0] = "SFM_cocoon_top";
@@ -186,7 +186,7 @@ new Material(SFM_cocoon_top_MTL)
    castShadows = false;
 };
 
-new Material(SFM_cocoon_bot_MTL)
+singleton Material(SFM_cocoon_bot_MTL)
 {
    mapTo = "SFM_cocoon_bot.png";
    diffuseMap[0] = "SFM_cocoon_bot";
@@ -197,7 +197,7 @@ new Material(SFM_cocoon_bot_MTL)
 };
 
 // LARVA
-new Material(SFM_larvaA2_MTL)
+singleton Material(SFM_larvaA2_MTL)
 {
    mapTo = "SFM_larvaA2.png";
    diffuseMap[0] = "SFM_larvaA2";
@@ -207,7 +207,7 @@ new Material(SFM_larvaA2_MTL)
    castShadows = false;
 };
 
-new Material(SFM_larvaA_MTL)
+singleton Material(SFM_larvaA_MTL)
 {
    mapTo = "SFM_larvaA.png";
    diffuseMap[0] = "SFM_larvaA";
@@ -217,7 +217,7 @@ new Material(SFM_larvaA_MTL)
    castShadows = false;
 };
 
-new Material(SFM_larvaB2_MTL)
+singleton Material(SFM_larvaB2_MTL)
 {
    mapTo = "SFM_larvaB2.png";
    diffuseMap[0] = "SFM_larvaB2";
@@ -227,7 +227,7 @@ new Material(SFM_larvaB2_MTL)
    castShadows = false;
 };
 
-new Material(SFM_larvaB_MTL)
+singleton Material(SFM_larvaB_MTL)
 {
    mapTo = "SFM_larvaB.png";
    diffuseMap[0] = "SFM_larvaB";
@@ -237,7 +237,7 @@ new Material(SFM_larvaB_MTL)
    castShadows = false;
 };
 
-new Material(SFM_larvaC_MTL)
+singleton Material(SFM_larvaC_MTL)
 {
    mapTo = "SFM_larvaC.png";
    diffuseMap[0] = "SFM_larvaC";
@@ -249,7 +249,7 @@ new Material(SFM_larvaC_MTL)
 
 // BIG MOTH
 
-new Material(SFM_mothbody_MTL)
+singleton Material(SFM_mothbody_MTL)
 {
    mapTo = "SFM_mothbody.png";
    diffuseMap[0] = "SFM_mothbody";
@@ -259,7 +259,7 @@ new Material(SFM_mothbody_MTL)
    castShadows = true;
 };
 
-new Material(SFM_mothhead_MTL)
+singleton Material(SFM_mothhead_MTL)
 {
    mapTo = "SFM_mothhead.png";
    diffuseMap[0] = "SFM_mothhead";
@@ -269,7 +269,7 @@ new Material(SFM_mothhead_MTL)
    castShadows = true;
 };
 
-new Material(SFM_mothlegs_MTL)
+singleton Material(SFM_mothlegs_MTL)
 {
    mapTo = "SFM_mothlegs.png";
    diffuseMap[0] = "SFM_mothlegs";
@@ -279,7 +279,7 @@ new Material(SFM_mothlegs_MTL)
    castShadows = true;
 };
 
-new Material(SFM_mothwing_lower_MTL)
+singleton Material(SFM_mothwing_lower_MTL)
 {
    mapTo = "SFM_mothwing_lower.png";
    diffuseMap[0] = "SFM_mothwing_lower";
@@ -289,7 +289,7 @@ new Material(SFM_mothwing_lower_MTL)
    castShadows = true;
 };
 
-new Material(SFM_mothwing_upper_MTL)
+singleton Material(SFM_mothwing_upper_MTL)
 {
    mapTo = "SFM_mothwing_upper.png";
    diffuseMap[0] = "SFM_mothwing_upper";
@@ -299,7 +299,7 @@ new Material(SFM_mothwing_upper_MTL)
    castShadows = true;
 };
 
-new Material(SFM_mothwing_blur_MTL)
+singleton Material(SFM_mothwing_blur_MTL)
 {
    mapTo = "SFM_mothwing_blur.png";
    diffuseMap[0] = "SFM_mothwing_blur";
@@ -309,7 +309,7 @@ new Material(SFM_mothwing_blur_MTL)
    castShadows = false;
 };
 
-new Material(SFM_mothwing_lower_trans1_MTL)
+singleton Material(SFM_mothwing_lower_trans1_MTL)
 {
    mapTo = "SFM_mothwing_lower_trans1.png";
    diffuseMap[0] = "SFM_mothwing_lower_trans1";
@@ -319,7 +319,7 @@ new Material(SFM_mothwing_lower_trans1_MTL)
    castShadows = false;
 };
 
-new Material(SFM_mothwing_lower_trans2_MTL)
+singleton Material(SFM_mothwing_lower_trans2_MTL)
 {
    mapTo = "SFM_mothwing_lower_trans2.png";
    diffuseMap[0] = "SFM_mothwing_lower_trans2";
@@ -329,7 +329,7 @@ new Material(SFM_mothwing_lower_trans2_MTL)
    castShadows = false;
 };
 
-new Material(SFM_mothwing_upper_trans1_MTL)
+singleton Material(SFM_mothwing_upper_trans1_MTL)
 {
    mapTo = "SFM_mothwing_upper_trans1.png";
    diffuseMap[0] = "SFM_mothwing_upper_trans1";
@@ -339,7 +339,7 @@ new Material(SFM_mothwing_upper_trans1_MTL)
    castShadows = false;
 };
 
-new Material(SFM_mothwing_upper_trans2_MTL)
+singleton Material(SFM_mothwing_upper_trans2_MTL)
 {
    mapTo = "SFM_mothwing_upper_trans2.png";
    diffuseMap[0] = "SFM_mothwing_upper_trans2";

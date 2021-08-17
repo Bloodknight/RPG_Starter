@@ -28,7 +28,7 @@
 //
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(SoR_shield_MTL)
+singleton Material(SoR_shield_MTL)
 {
    mapTo = "SoR_shield.png";
    diffuseMap[0] = "SoR_shield";
@@ -38,7 +38,7 @@ new Material(SoR_shield_MTL)
    castShadows = false;
 };
 
-new Material(SoR_roach_MTL)
+singleton Material(SoR_roach_MTL)
 {
    mapTo = "SoR_roach.png";
    diffuseMap[0] = "SoR_roach";

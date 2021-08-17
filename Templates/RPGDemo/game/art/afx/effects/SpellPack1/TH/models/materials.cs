@@ -28,7 +28,7 @@
 //
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(TH_auraA_MTL)
+singleton Material(TH_auraA_MTL)
 {
    mapTo = "TH_auraA.png";
    diffuseMap[0] = "TH_auraA";
@@ -38,13 +38,13 @@ new Material(TH_auraA_MTL)
    castShadows = false;
 };
 
-new Material(TH_auraB_MTL : TH_auraA_MTL)
+singleton Material(TH_auraB_MTL : TH_auraA_MTL)
 {
    mapTo = "TH_auraB.png";
    diffuseMap[0] = "TH_auraB";
 };
 
-new Material(TH_casterGlowA_MTL)
+singleton Material(TH_casterGlowA_MTL)
 {
    mapTo = "TH_casterGlowA.png";
    diffuseMap[0] = "TH_casterGlowA";
@@ -54,19 +54,19 @@ new Material(TH_casterGlowA_MTL)
    castShadows = false;
 };
 
-new Material(TH_casterGlowB_MTL : TH_casterGlowA_MTL)
+singleton Material(TH_casterGlowB_MTL : TH_casterGlowA_MTL)
 {
    mapTo = "TH_casterGlowB.png";
    diffuseMap[0] = "TH_casterGlowB";
 };
 
-new Material(TH_casterGlowC_MTL : TH_casterGlowA_MTL)
+singleton Material(TH_casterGlowC_MTL : TH_casterGlowA_MTL)
 {
    mapTo = "TH_casterGlowC.png";
    diffuseMap[0] = "TH_casterGlowC";
 };
 
-new Material(TH_casterLightningA_MTL)
+singleton Material(TH_casterLightningA_MTL)
 {
    mapTo = "TH_casterLightningA.png";
    diffuseMap[0] = "TH_casterLightningA";
@@ -76,7 +76,7 @@ new Material(TH_casterLightningA_MTL)
    castShadows = false;
 };
 
-new Material(TH_casterLightningB_MTL)
+singleton Material(TH_casterLightningB_MTL)
 {
    mapTo = "TH_casterLightningB.png";
    diffuseMap[0] = "TH_casterLightningB";
@@ -86,7 +86,7 @@ new Material(TH_casterLightningB_MTL)
    castShadows = false;
 };
 
-new Material(TH_casterLightningC_MTL)
+singleton Material(TH_casterLightningC_MTL)
 {
    mapTo = "TH_casterLightningC.png";
    diffuseMap[0] = "TH_casterLightningC";
@@ -96,7 +96,7 @@ new Material(TH_casterLightningC_MTL)
    castShadows = false;
 };
 
-new Material(TH_glowball_MTL)
+singleton Material(TH_glowball_MTL)
 {
    mapTo = "TH_glowball.png";
    diffuseMap[0] = "TH_glowball";
@@ -106,7 +106,7 @@ new Material(TH_glowball_MTL)
    castShadows = false;
 };
 
-new Material(TH_hammer_MTL)
+singleton Material(TH_hammer_MTL)
 {
    mapTo = "TH_hammer.png";
    diffuseMap[0] = "TH_hammer";
@@ -116,7 +116,7 @@ new Material(TH_hammer_MTL)
    castShadows = true;
 };
 
-new Material(TH_lightbeam_MTL)
+singleton Material(TH_lightbeam_MTL)
 {
    mapTo = "TH_lightbeam.png";
    diffuseMap[0] = "TH_lightbeam";

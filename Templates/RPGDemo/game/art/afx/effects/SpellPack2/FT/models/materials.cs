@@ -28,7 +28,7 @@
 //
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(FitS_TowerShiny_MTL)
+singleton Material(FitS_TowerShiny_MTL)
 {
    mapTo = "towerShiny";
    diffuseMap[0] = "FT_stone6";
@@ -43,7 +43,7 @@ new Material(FitS_TowerShiny_MTL)
    castShadows = true;
 };
 
-new Material(FitS_TowerDrab_MTL)
+singleton Material(FitS_TowerDrab_MTL)
 {
    mapTo = "towerDrab";
    diffuseMap[0] = "FT_stone6";
@@ -53,7 +53,7 @@ new Material(FitS_TowerDrab_MTL)
    castShadows = true;
 };
 
-new Material(FitS_FinalBeamA_MTL)
+singleton Material(FitS_FinalBeamA_MTL)
 {
    mapTo = "FT_finalBeamA_1.png";
    diffuseMap[0] = "FT_finalBeamA_1";
@@ -63,7 +63,7 @@ new Material(FitS_FinalBeamA_MTL)
    castShadows = false;
 };
 
-new Material(FitS_FinalBeamB_MTL)
+singleton Material(FitS_FinalBeamB_MTL)
 {
    mapTo = "FT_finalBeamB_1.png";
    diffuseMap[0] = "FT_finalBeamB_1";

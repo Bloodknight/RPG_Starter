@@ -26,12 +26,12 @@
 //
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
 
-new Material(Campfire_Ash_MTL)
+singleton Material(Campfire_Ash_MTL)
 {
   diffuseMap[0] = "ash";
 };
 
-new Material(Campfire_Stone_MTL)
+singleton Material(Campfire_Stone_MTL)
 {
   diffuseMap[0] = "stone";
 };
