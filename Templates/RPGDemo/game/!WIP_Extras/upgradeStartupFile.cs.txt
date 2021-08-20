@@ -14,7 +14,7 @@ exec("art/shapes/actors/SpaceOrcMage/SpaceOrcMage.cs");
 
 
 e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\gui\optionsDlg.cs (1 hit)
-exec( "scripts/client/default.bind.cs" );
+exec( "scripts/client/default_bind.cs" );
 
 
 e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\main.cs (4 hits)

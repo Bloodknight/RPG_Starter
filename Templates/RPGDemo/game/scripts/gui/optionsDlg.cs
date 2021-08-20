@@ -526,7 +526,7 @@ $RemapCount++;
 function restoreDefaultMappings()
 {
    moveMap.delete();
-   exec( "scripts/client/default.bind.cs" );
+   exec( "scripts/client/default_bind.cs" );
    optionsDlg.fillRemapList();
 }
 

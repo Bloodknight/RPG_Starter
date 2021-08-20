@@ -155,18 +155,18 @@ function RPGStarterImport::initClient(%this)
 {
 
 // e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\client\defaults
-%this.queueExec("core/scripts/client/defaults.cs");         // noexist
-%this.queueExec("./prefs.cs" );
+//%this.queueExec("core/scripts/client/defaults.cs");         // noexist
+//%this.queueExec("./prefs.cs" );
 
 // e:\RPG_Starter3\My Projects\RPGStarterImport\scripts\client\init
 %this.queueExec("art/gui/defaultGameProfiles");             // noexist
 %this.queueExec("art/gui/customProfiles");                  // noexist
 
-%this.queueExec("./scripts/gui/afx/playGui_AFX"); // +
-%this.queueExec("./scripts/gui/startupGui");
-%this.queueExec("./scripts/gui/chooseLevelDlg");
-%this.queueExec("./scripts/gui/loadingGui");
-%this.queueExec("./scripts/gui/optionsDlg");
+//%this.queueExec("./scripts/gui/afx/playGui_AFX"); // +
+//%this.queueExec("./scripts/gui/startupGui");
+//%this.queueExec("./scripts/gui/chooseLevelDlg");
+//%this.queueExec("./scripts/gui/loadingGui");
+//%this.queueExec("./scripts/gui/optionsDlg");
 
 %this.queueExec("./scripts/client/client");
 %this.queueExec("./scripts/client/game");
@@ -177,7 +177,7 @@ function RPGStarterImport::initClient(%this)
 %this.queueExec("./scripts/client/afx/afxSelectionMgr");
 %this.queueExec("./scripts/client/afx/afxClientUtil");
 %this.queueExec("./scripts/client/shaders");
-%this.queueExec("./scripts/client/afx/default.bind_AFX");
+%this.queueExec("./scripts/client/afx/default_bind_AFX");
 %this.queueExec("./scripts/client/config");
 
 %this.queueExec("./guis/playGui_AFX.gui");

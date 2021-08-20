@@ -112,7 +112,7 @@ function initClient()
    exec("./shaders.cs");
 
    // Default player key bindings
-   exec("./afx/default.bind_AFX.cs"); // AFX MOD
+   exec("./afx/default_bind_AFX.cs"); // AFX MOD
 
    if (isFile("./config.cs"))
       exec("./config.cs");
